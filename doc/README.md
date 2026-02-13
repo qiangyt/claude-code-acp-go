@@ -33,7 +33,7 @@
 |------|------|------|
 | Claude Agent SDK | `schlunsen/claude-agent-sdk-go` | 非官方社区移植，生产就绪 |
 | MCP SDK | `modelcontextprotocol/go-sdk` | 官方 Go SDK |
-| Go 版本 | 1.24+ | 最新稳定版 |
+| Go 版本 | 1.25+ |  |
 
 ## 快速链接
 
@@ -52,6 +52,52 @@
 - [ ] Go 代码实现
 - [ ] 协议兼容性测试
 - [ ] Zed 编辑器集成测试
+
+## 开发命令
+
+本项目使用 [mise](https://mise.jdx.dev/) 管理开发任务。以下是可用的命令：
+
+### 环境与模块
+
+| 命令 | 描述 |
+|------|------|
+| `mise init` | 初始化开发环境 |
+| `mise mod` | 下载并整理 Go 模块 |
+
+### 代码质量
+
+| 命令 | 描述 |
+|------|------|
+| `mise check` | 格式化代码 |
+| `mise lint` | 运行代码检查 (golangci-lint) |
+
+### 测试
+
+| 命令 | 描述 |
+|------|------|
+| `mise test` | 运行测试并生成覆盖率报告 |
+| `mise test-unit` | 运行单元测试（快速） |
+| `mise test-race` | 运行竞态检测 |
+| `mise test-e2e` | 运行端到端测试 |
+| `mise test-compat` | 运行兼容性测试 |
+| `mise test-all` | 运行所有测试（单元 + 集成 + E2E） |
+| `mise check-coverage` | 检查测试覆盖率是否达到 100% |
+
+### 构建
+
+| 命令 | 描述 |
+|------|------|
+| `mise build` | 构建当前平台 |
+| `mise build-all` | 构建所有平台二进制文件 |
+| `mise release` | 构建并发布所有平台安装包 |
+| `mise clean` | 清理构建产物 |
+
+### 代码生成
+
+| 命令 | 描述 |
+|------|------|
+| `mise generate` | 生成代码（执行 go:generate 指令） |
+| `mise mockgen` | 生成 mock 文件 |
 
 ---
 

@@ -1,0 +1,95 @@
+# mise tasks for claude-code-acp-go project
+# See https://mise.jdx.dev/devel/tasks.html
+
+[tools]
+golang = "1.25"
+
+[tasks.init]
+description = "初始化开发环境"
+run = "python3 scripts/build.py init"
+
+[tasks.mod]
+description = "下载并整理 Go 模块"
+run = "python3 scripts/build.py mod"
+
+[tasks.check]
+description = "格式化代码"
+depends = ["mod"]
+run = "python3 scripts/build.py check"
+
+[tasks.lint]
+description = "运行代码检查 (golangci-lint)"
+run = "python3 scripts/build.py lint"
+
+[tasks.test]
+description = "运行测试并生成覆盖率报告"
+run = "python3 scripts/build.py test"
+
+[tasks.test-unit]
+description = "运行单元测试（快速）"
+run = "python3 scripts/build.py test-unit"
+
+[tasks.test-race]
+description = "运行竞态检测"
+run = "python3 scripts/build.py test-race"
+
+[tasks.test-e2e]
+description = "运行端到端测试"
+run = "python3 scripts/build.py test-e2e"
+
+[tasks.test-compat]
+description = "运行兼容性测试"
+run = "python3 scripts/build.py test-compat"
+
+[tasks.test-all]
+description = "运行所有测试（单元 + 集成 + E2E）"
+run = "python3 scripts/build.py test-all"
+
+[tasks.check-coverage]
+description = "检查测试覆盖率是否达到 100%"
+run = "python3 scripts/build.py check-coverage"
+
+[tasks.build]
+description = "构建当前平台"
+depends = ["check"]
+run = "python3 scripts/build.py build"
+
+[tasks.build-all]
+description = "构建所有平台二进制文件"
+run = "python3 scripts/build.py build-all"
+
+[tasks.release]
+description = "构建并发布所有平台安装包"
+run = "python3 scripts/build.py release"
+
+[tasks.clean]
+description = "清理构建产物"
+run = "python3 scripts/build.py clean"
+
+[tasks.generate]
+description = "生成代码（执行 go:generate 指令）"
+run = "python3 scripts/build.py generate"
+
+[tasks.mockgen]
+description = "生成 mock 文件"
+run = "python3 scripts/build.py mockgen"
+
+# [tasks.env-up]
+# description = "启动测试环境（MQTT Broker）"
+# run = "python3 scripts/build.py env-up"
+
+# [tasks.env-down]
+# description = "停止测试环境"
+# run = "python3 scripts/build.py env-down"
+
+# [tasks.env-status]
+# description = "查看测试环境状态"
+# run = "python3 scripts/build.py env-status"
+
+# [tasks.test-integration]
+# description = "运行集成测试（自动启动 MQTT）"
+# run = "python3 scripts/build.py test-integration"
+
+# [tasks.test-e2e]
+# description = "运行 E2E 测试（自动启动 MQTT，需要 claude-code）"
+# run = "python3 scripts/build.py test-e2e"
