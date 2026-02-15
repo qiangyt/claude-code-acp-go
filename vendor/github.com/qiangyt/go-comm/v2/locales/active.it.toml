@@ -1,0 +1,208 @@
+# go-comm Messaggi in italiano
+
+# Errori di conversione del tipo
+[error.required]
+one = "{{.Hint}}.{{.Key}} è obbligatorio"
+other = "{{.Hint}}.{{.Key}} è obbligatorio"
+
+[error.type.string]
+one = "{{.Hint}} deve essere una stringa, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere una stringa, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} deve essere un array di stringhe, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un array di stringhe, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} deve essere una mappa di stringhe, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere una mappa di stringhe, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} deve essere un intero, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un intero, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} deve essere un array di interi, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un array di interi, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} deve essere una mappa di interi, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere una mappa di interi, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} deve essere un float64, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un float64, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} deve essere un array di float64, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un array di float64, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} deve essere una mappa di float64, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere una mappa di float64, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} deve essere un booleano, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un booleano, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} deve essere un array di booleani, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere un array di booleani, ma ora è {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} deve essere una mappa di booleani, ma ora è {{.Type}}({{.Value}})"
+other = "{{.Hint}} deve essere una mappa di booleani, ma ora è {{.Type}}({{.Value}})"
+
+# Errori del plugin
+[error.plugin.version_mismatch]
+one = "ci si aspetta che la versione principale del plugin {{.Namespace}}/{{.Name}} sia {{.Expected}}, ma è {{.Actual}}"
+other = "ci si aspetta che la versione principale del plugin {{.Namespace}}/{{.Name}} sia {{.Expected}}, ma è {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "il plugin {{.Namespace}}/{{.Name}} dichiara un tipo di plugin non supportato {{.Kind}}"
+other = "il plugin {{.Namespace}}/{{.Name}} dichiara un tipo di plugin non supportato {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "namespace non specificato: {{.Loader}}"
+other = "namespace non specificato: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "il namespace del plugin {{.Namespace}} è già registrato da: {{.Loader}}"
+other = "il namespace del plugin {{.Namespace}} è già registrato da: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "il plugin {{.Namespace}} ha un tipo duplicato {{.Kind}} con {{.Loader}}"
+other = "il plugin {{.Namespace}} ha un tipo duplicato {{.Kind}} con {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "avvio plugin: {{.PluginId}} (versione {{.Version}}), causa: {{.Cause}}"
+other = "avvio plugin: {{.PluginId}} (versione {{.Version}}), causa: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "arresto plugin: {{.PluginId}} (versione {{.Version}}), causa: {{.Cause}}"
+other = "arresto plugin: {{.PluginId}} (versione {{.Version}}), causa: {{.Cause}}"
+
+# Messaggi di log del plugin
+[log.plugin.loader.starting]
+one = "avvio del caricatore di plugin"
+other = "avvio del caricatore di plugin"
+
+[log.plugin.loader.started]
+one = "caricatore di plugin avviato"
+other = "caricatore di plugin avviato"
+
+[log.plugin.loader.start_failed]
+one = "impossibile avviare il caricatore di plugin"
+other = "impossibile avviare il caricatore di plugin"
+
+[log.plugin.loader.stopping]
+one = "arresto del caricatore di plugin"
+other = "arresto del caricatore di plugin"
+
+[log.plugin.loader.stopped]
+one = "caricatore di plugin arrestato"
+other = "caricatore di plugin arrestato"
+
+[log.plugin.loader.stop_failed]
+one = "impossibile arrestare il caricatore di plugin"
+other = "impossibile arrestare il caricatore di plugin"
+
+# Errori di file
+[error.file.already_exists]
+one = "il file esiste già: {{.Path}}"
+other = "il file esiste già: {{.Path}}"
+
+[error.file.not_found]
+one = "file non trovato: {{.Path}}"
+other = "file non trovato: {{.Path}}"
+
+[error.dir.already_exists]
+one = "la directory esiste già: {{.Path}}"
+other = "la directory esiste già: {{.Path}}"
+
+[error.dir.not_found]
+one = "directory non trovata: {{.Path}}"
+other = "directory non trovata: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "ci si aspetta che {{.Path}} sia un file, ma è una directory"
+other = "ci si aspetta che {{.Path}} sia un file, ma è una directory"
+
+[error.file.expect_dir_but_file]
+one = "ci si aspetta che {{.Path}} sia una directory, ma è un file"
+other = "ci si aspetta che {{.Path}} sia una directory, ma è un file"
+
+[error.file.cannot_remove_root]
+one = "NON si deve rimuovere la directory radice"
+other = "NON si deve rimuovere la directory radice"
+
+# Errori del file di ambiente
+[error.env.zero_length_string]
+one = "stringa di lunghezza zero"
+other = "stringa di lunghezza zero"
+
+[error.env.cannot_separate_key_value]
+one = "impossibile separare la chiave dal valore"
+other = "impossibile separare la chiave dal valore"
+
+# Errori di rete
+[error.net.interface_not_found]
+one = "l'interfaccia {{.Interface}} non è stata trovata, è inattiva o non supporta il broadcast"
+other = "l'interfaccia {{.Interface}} non è stata trovata, è inattiva o non supporta il broadcast"
+
+# Messaggi di errore delle operazioni sui file
+[InvalidChmodValue]
+one = "valore chmod non valido: {{.value}}"
+other = "valore chmod non valido: {{.value}}"
+
+[FailedToChmod]
+one = "chmod fallito"
+other = "chmod fallito"
+
+[FailedToChown]
+one = "chown fallito, output: {{.output}}"
+other = "chown fallito, output: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "impossibile creare la directory di destinazione"
+other = "impossibile creare la directory di destinazione"
+
+[FailedToOpenSource]
+one = "impossibile aprire il file sorgente"
+other = "impossibile aprire il file sorgente"
+
+[FailedToCreateDest]
+one = "impossibile creare il file di destinazione"
+other = "impossibile creare il file di destinazione"
+
+[FailedToCopyFile]
+one = "copia del file fallita"
+other = "copia del file fallita"
+
+[FailedToRemoveSource]
+one = "impossibile rimuovere il file sorgente dopo la copia"
+other = "impossibile rimuovere il file sorgente dopo la copia"
+
+[FailedToCreateLinkDir]
+one = "impossibile creare la directory dei collegamenti"
+other = "impossibile creare la directory dei collegamenti"
+
+[FailedToCreateSymlink]
+one = "impossibile creare il collegamento simbolico, output: {{.output}}"
+other = "impossibile creare il collegamento simbolico, output: {{.output}}"
+
+[FailedToCreateDir]
+one = "impossibile creare la directory"
+other = "impossibile creare la directory"
+
+[FailedToGetFileSize]
+one = "impossibile ottenere la dimensione del file"
+other = "impossibile ottenere la dimensione del file"
+
+[FailedToRenameFile]
+one = "rinomina del file fallita"
+other = "rinomina del file fallita"
+
+[FailedToCreateDirSudo]
+one = "impossibile creare la directory con sudo, output: {{.output}}"
+other = "impossibile creare la directory con sudo, output: {{.output}}"

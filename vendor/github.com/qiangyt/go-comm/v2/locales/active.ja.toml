@@ -1,0 +1,208 @@
+# go-comm 日本語メッセージ
+
+# 型変換エラー
+[error.required]
+one = "{{.Hint}}.{{.Key}}は必須です"
+other = "{{.Hint}}.{{.Key}}は必須です"
+
+[error.type.string]
+one = "{{.Hint}}は文字列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は文字列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.string_array]
+one = "{{.Hint}}は文字列配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は文字列配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.string_map]
+one = "{{.Hint}}は文字列マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は文字列マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.int]
+one = "{{.Hint}}は整数である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は整数である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.int_array]
+one = "{{.Hint}}は整数配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は整数配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.int_map]
+one = "{{.Hint}}は整数マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は整数マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.float]
+one = "{{.Hint}}はfloat64である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}はfloat64である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.float_array]
+one = "{{.Hint}}はfloat64配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}はfloat64配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.float_map]
+one = "{{.Hint}}はfloat64マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}はfloat64マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.bool]
+one = "{{.Hint}}は真偽値である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は真偽値である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.bool_array]
+one = "{{.Hint}}は真偽値配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は真偽値配列である必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+[error.type.bool_map]
+one = "{{.Hint}}は真偽値マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+other = "{{.Hint}}は真偽値マップである必要がありますが、現在は{{.Type}}({{.Value}})です"
+
+# プラグインエラー
+[error.plugin.version_mismatch]
+one = "プラグイン{{.Namespace}}/{{.Name}}のメジャーバージョンは{{.Expected}}である必要がありますが、{{.Actual}}です"
+other = "プラグイン{{.Namespace}}/{{.Name}}のメジャーバージョンは{{.Expected}}である必要がありますが、{{.Actual}}です"
+
+[error.plugin.unsupported_kind]
+one = "プラグイン{{.Namespace}}/{{.Name}}がサポートされていないプラグイン種類{{.Kind}}を宣言しています"
+other = "プラグイン{{.Namespace}}/{{.Name}}がサポートされていないプラグイン種類{{.Kind}}を宣言しています"
+
+[error.plugin.namespace_not_specified]
+one = "名前空間が指定されていません: {{.Loader}}"
+other = "名前空間が指定されていません: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "プラグイン名前空間{{.Namespace}}は既に{{.Loader}}によって登録されています"
+other = "プラグイン名前空間{{.Namespace}}は既に{{.Loader}}によって登録されています"
+
+[error.plugin.duplicated_kind]
+one = "プラグイン{{.Namespace}}に{{.Loader}}と重複する種類{{.Kind}}があります"
+other = "プラグイン{{.Namespace}}に{{.Loader}}と重複する種類{{.Kind}}があります"
+
+[error.plugin.start_failed]
+one = "プラグイン開始: {{.PluginId}} (バージョン{{.Version}})、原因: {{.Cause}}"
+other = "プラグイン開始: {{.PluginId}} (バージョン{{.Version}})、原因: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "プラグイン停止: {{.PluginId}} (バージョン{{.Version}})、原因: {{.Cause}}"
+other = "プラグイン停止: {{.PluginId}} (バージョン{{.Version}})、原因: {{.Cause}}"
+
+# プラグインログメッセージ
+[log.plugin.loader.starting]
+one = "プラグインローダーを開始中"
+other = "プラグインローダーを開始中"
+
+[log.plugin.loader.started]
+one = "プラグインローダーが開始されました"
+other = "プラグインローダーが開始されました"
+
+[log.plugin.loader.start_failed]
+one = "プラグインローダーの開始に失敗しました"
+other = "プラグインローダーの開始に失敗しました"
+
+[log.plugin.loader.stopping]
+one = "プラグインローダーを停止中"
+other = "プラグインローダーを停止中"
+
+[log.plugin.loader.stopped]
+one = "プラグインローダーが停止しました"
+other = "プラグインローダーが停止しました"
+
+[log.plugin.loader.stop_failed]
+one = "プラグインローダーの停止に失敗しました"
+other = "プラグインローダーの停止に失敗しました"
+
+# ファイルエラー
+[error.file.already_exists]
+one = "ファイルは既に存在します: {{.Path}}"
+other = "ファイルは既に存在します: {{.Path}}"
+
+[error.file.not_found]
+one = "ファイルが見つかりません: {{.Path}}"
+other = "ファイルが見つかりません: {{.Path}}"
+
+[error.dir.already_exists]
+one = "ディレクトリは既に存在します: {{.Path}}"
+other = "ディレクトリは既に存在します: {{.Path}}"
+
+[error.dir.not_found]
+one = "ディレクトリが見つかりません: {{.Path}}"
+other = "ディレクトリが見つかりません: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "{{.Path}}はファイルである必要がありますが、ディレクトリです"
+other = "{{.Path}}はファイルである必要がありますが、ディレクトリです"
+
+[error.file.expect_dir_but_file]
+one = "{{.Path}}はディレクトリである必要がありますが、ファイルです"
+other = "{{.Path}}はディレクトリである必要がありますが、ファイルです"
+
+[error.file.cannot_remove_root]
+one = "ルートディレクトリを削除してはいけません"
+other = "ルートディレクトリを削除してはいけません"
+
+# 環境ファイルエラー
+[error.env.zero_length_string]
+one = "長さがゼロの文字列"
+other = "長さがゼロの文字列"
+
+[error.env.cannot_separate_key_value]
+one = "キーと値を分離できません"
+other = "キーと値を分離できません"
+
+# ネットワークエラー
+[error.net.interface_not_found]
+one = "インターフェース{{.Interface}}が見つからない、ダウンしている、またはブロードキャストをサポートしていません"
+other = "インターフェース{{.Interface}}が見つからない、ダウンしている、またはブロードキャストをサポートしていません"
+
+# ファイル操作エラーメッセージ
+[InvalidChmodValue]
+one = "無効なchmod値: {{.value}}"
+other = "無効なchmod値: {{.value}}"
+
+[FailedToChmod]
+one = "chmodに失敗しました"
+other = "chmodに失敗しました"
+
+[FailedToChown]
+one = "chownに失敗しました、出力: {{.output}}"
+other = "chownに失敗しました、出力: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "宛先ディレクトリの作成に失敗しました"
+other = "宛先ディレクトリの作成に失敗しました"
+
+[FailedToOpenSource]
+one = "ソースファイルを開くのに失敗しました"
+other = "ソースファイルを開くのに失敗しました"
+
+[FailedToCreateDest]
+one = "宛先ファイルの作成に失敗しました"
+other = "宛先ファイルの作成に失敗しました"
+
+[FailedToCopyFile]
+one = "ファイルのコピーに失敗しました"
+other = "ファイルのコピーに失敗しました"
+
+[FailedToRemoveSource]
+one = "コピー後のソースファイルの削除に失敗しました"
+other = "コピー後のソースファイルの削除に失敗しました"
+
+[FailedToCreateLinkDir]
+one = "リンクディレクトリの作成に失敗しました"
+other = "リンクディレクトリの作成に失敗しました"
+
+[FailedToCreateSymlink]
+one = "シンボリックリンクの作成に失敗しました、出力: {{.output}}"
+other = "シンボリックリンクの作成に失敗しました、出力: {{.output}}"
+
+[FailedToCreateDir]
+one = "ディレクトリの作成に失敗しました"
+other = "ディレクトリの作成に失敗しました"
+
+[FailedToGetFileSize]
+one = "ファイルサイズの取得に失敗しました"
+other = "ファイルサイズの取得に失敗しました"
+
+[FailedToRenameFile]
+one = "ファイル名の変更に失敗しました"
+other = "ファイル名の変更に失敗しました"
+
+[FailedToCreateDirSudo]
+one = "sudoを使用したディレクトリの作成に失敗しました、出力: {{.output}}"
+other = "sudoを使用したディレクトリの作成に失敗しました、出力: {{.output}}"

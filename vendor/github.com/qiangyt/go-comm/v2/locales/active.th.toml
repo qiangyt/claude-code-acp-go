@@ -1,0 +1,208 @@
+# go-comm ข้อความภาษาไทย
+
+# ข้อผิดพลาดในการแปลงประเภท
+[error.required]
+one = "{{.Hint}}.{{.Key}} จำเป็น"
+other = "{{.Hint}}.{{.Key}} จำเป็น"
+
+[error.type.string]
+one = "{{.Hint}} ต้องเป็นสตริง แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นสตริง แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} ต้องเป็นอาร์เรย์สตริง แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นอาร์เรย์สตริง แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} ต้องเป็นแมปสตริง แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นแมปสตริง แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} ต้องเป็นจำนวนเต็ม แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นจำนวนเต็ม แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} ต้องเป็นอาร์เรย์จำนวนเต็ม แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นอาร์เรย์จำนวนเต็ม แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} ต้องเป็นแมปจำนวนเต็ม แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นแมปจำนวนเต็ม แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} ต้องเป็น float64 แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็น float64 แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} ต้องเป็นอาร์เรย์ float64 แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นอาร์เรย์ float64 แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} ต้องเป็นแมป float64 แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นแมป float64 แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} ต้องเป็นบูลีน แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นบูลีน แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} ต้องเป็นอาร์เรย์บูลีน แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นอาร์เรย์บูลีน แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} ต้องเป็นแมปบูลีน แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+other = "{{.Hint}} ต้องเป็นแมปบูลีน แต่ปัจจุบันคือ {{.Type}}({{.Value}})"
+
+# ข้อผิดพลาดปลั๊กอิน
+[error.plugin.version_mismatch]
+one = "คาดว่าเวอร์ชันหลักของปลั๊กอิน {{.Namespace}}/{{.Name}} เป็น {{.Expected}} แต่เป็น {{.Actual}}"
+other = "คาดว่าเวอร์ชันหลักของปลั๊กอิน {{.Namespace}}/{{.Name}} เป็น {{.Expected}} แต่เป็น {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "ปลั๊กอิน {{.Namespace}}/{{.Name}} อ้างถึงประเภทปลั๊กอินที่ไม่รองรับ {{.Kind}}"
+other = "ปลั๊กอิน {{.Namespace}}/{{.Name}} อ้างถึงประเภทปลั๊กอินที่ไม่รองรับ {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "ไม่ได้ระบุเนมสเปซ: {{.Loader}}"
+other = "ไม่ได้ระบุเนมสเปซ: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "เนมสเปซปลั๊กอิน {{.Namespace}} ถูกลงทะเบียนแล้วโดย: {{.Loader}}"
+other = "เนมสเปซปลั๊กอิน {{.Namespace}} ถูกลงทะเบียนแล้วโดย: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "ปลั๊กอิน {{.Namespace}} มีประเภทซ้ำ {{.Kind}} กับ {{.Loader}}"
+other = "ปลั๊กอิน {{.Namespace}} มีประเภทซ้ำ {{.Kind}} กับ {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "เริ่มปลั๊กอิน: {{.PluginId}} (เวอร์ชัน {{.Version}}), สาเหตุ: {{.Cause}}"
+other = "เริ่มปลั๊กอิน: {{.PluginId}} (เวอร์ชัน {{.Version}}), สาเหตุ: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "หยุดปลั๊กอิน: {{.PluginId}} (เวอร์ชัน {{.Version}}), สาเหตุ: {{.Cause}}"
+other = "หยุดปลั๊กอิน: {{.PluginId}} (เวอร์ชัน {{.Version}}), สาเหตุ: {{.Cause}}"
+
+# ข้อความ log ปลั๊กอิน
+[log.plugin.loader.starting]
+one = "กำลังเริ่มตัวโหลดปลั๊กอิน"
+other = "กำลังเริ่มตัวโหลดปลั๊กอิน"
+
+[log.plugin.loader.started]
+one = "เริ่มตัวโหลดปลั๊กอินแล้ว"
+other = "เริ่มตัวโหลดปลั๊กอินแล้ว"
+
+[log.plugin.loader.start_failed]
+one = "ไม่สามารถเริ่มตัวโหลดปลั๊กอิน"
+other = "ไม่สามารถเริ่มตัวโหลดปลั๊กอิน"
+
+[log.plugin.loader.stopping]
+one = "กำลังหยุดตัวโหลดปลั๊กอิน"
+other = "กำลังหยุดตัวโหลดปลั๊กอิน"
+
+[log.plugin.loader.stopped]
+one = "หยุดตัวโหลดปลั๊กอินแล้ว"
+other = "หยุดตัวโหลดปลั๊กอินแล้ว"
+
+[log.plugin.loader.stop_failed]
+one = "ไม่สามารถหยุดตัวโหลดปลั๊กอิน"
+other = "ไม่สามารถหยุดตัวโหลดปลั๊กอิน"
+
+# ข้อผิดพลาดไฟล์
+[error.file.already_exists]
+one = "ไฟล์มีอยู่แล้ว: {{.Path}}"
+other = "ไฟล์มีอยู่แล้ว: {{.Path}}"
+
+[error.file.not_found]
+one = "ไม่พบไฟล์: {{.Path}}"
+other = "ไม่พบไฟล์: {{.Path}}"
+
+[error.dir.already_exists]
+one = "ไดเรกทอรีมีอยู่แล้ว: {{.Path}}"
+other = "ไดเรกทอรีมีอยู่แล้ว: {{.Path}}"
+
+[error.dir.not_found]
+one = "ไม่พบไดเรกทอรี: {{.Path}}"
+other = "ไม่พบไดเรกทอรี: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "คาดว่า {{.Path}} เป็นไฟล์ แต่เป็นไดเรกทอรี"
+other = "คาดว่า {{.Path}} เป็นไฟล์ แต่เป็นไดเรกทอรี"
+
+[error.file.expect_dir_but_file]
+one = "คาดว่า {{.Path}} เป็นไดเรกทอรี แต่เป็นไฟล์"
+other = "คาดว่า {{.Path}} เป็นไดเรกทอรี แต่เป็นไฟล์"
+
+[error.file.cannot_remove_root]
+one = "ไม่ควรลบไดเรกทอรีราก"
+other = "ไม่ควรลบไดเรกทอรีราก"
+
+# ข้อผิดพลาดไฟล์สภาพแวดล้อม
+[error.env.zero_length_string]
+one = "สตริงมีความยาวเป็นศูนย์"
+other = "สตริงมีความยาวเป็นศูนย์"
+
+[error.env.cannot_separate_key_value]
+one = "ไม่สามารถแยกคีย์ออกจากค่า"
+other = "ไม่สามารถแยกคีย์ออกจากค่า"
+
+# ข้อผิดพลาดเครือข่าย
+[error.net.interface_not_found]
+one = "ไม่พบอินเทอร์เฟซ {{.Interface}} หรือปิดอยู่ หรือไม่รองรับการแพร่กกระจาย"
+other = "ไม่พบอินเทอร์เฟซ {{.Interface}} หรือปิดอยู่ หรือไม่รองรับการแพร่กกระจาย"
+
+# ข้อความผิดพลาดการดำเนินการไฟล์
+[InvalidChmodValue]
+one = "ค่า chmod ไม่ถูกต้อง: {{.value}}"
+other = "ค่า chmod ไม่ถูกต้อง: {{.value}}"
+
+[FailedToChmod]
+one = "chmod ล้มเหลว"
+other = "chmod ล้มเหลว"
+
+[FailedToChown]
+one = "chown ล้มเหลว ผลลัพธ์: {{.output}}"
+other = "chown ล้มเหลว ผลลัพธ์: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "ไม่สามารถสร้างไดเรกทอรีปลายทาง"
+other = "ไม่สามารถสร้างไดเรกทอรีปลายทาง"
+
+[FailedToOpenSource]
+one = "ไม่สามารถเปิดไฟล์ต้นทาง"
+other = "ไม่สามารถเปิดไฟล์ต้นทาง"
+
+[FailedToCreateDest]
+one = "ไม่สามารถสร้างไฟล์ปลายทาง"
+other = "ไม่สามารถสร้างไฟล์ปลายทาง"
+
+[FailedToCopyFile]
+one = "ไม่สามารถคัดลอกไฟล์"
+other = "ไม่สามารถคัดลอกไฟล์"
+
+[FailedToRemoveSource]
+one = "ไม่สามารถลบไฟล์ต้นทางหลังคัดลอก"
+other = "ไม่สามารถลบไฟล์ต้นทางหลังคัดลอก"
+
+[FailedToCreateLinkDir]
+one = "ไม่สามารถสร้างไดเรกทอรีลิงก์"
+other = "ไม่สามารถสร้างไดเรกทอรีลิงก์"
+
+[FailedToCreateSymlink]
+one = "ไม่สามารถสร้างลิงก์สัญลักษณ์ ผลลัพธ์: {{.output}}"
+other = "ไม่สามารถสร้างลิงก์สัญลักษณ์ ผลลัพธ์: {{.output}}"
+
+[FailedToCreateDir]
+one = "ไม่สามารถสร้างไดเรกทอรี"
+other = "ไม่สามารถสร้างไดเรกทอรี"
+
+[FailedToGetFileSize]
+one = "ไม่สามารถรับขนาดไฟล์"
+other = "ไม่สามารถรับขนาดไฟล์"
+
+[FailedToRenameFile]
+one = "ไม่สามารถเปลี่ยนชื่อไฟล์"
+other = "ไม่สามารถเปลี่ยนชื่อไฟล์"
+
+[FailedToCreateDirSudo]
+one = "ไม่สามารถสร้างไดเรกทอรีด้วย sudo ผลลัพธ์: {{.output}}"
+other = "ไม่สามารถสร้างไดเรกทอรีด้วย sudo ผลลัพธ์: {{.output}}"

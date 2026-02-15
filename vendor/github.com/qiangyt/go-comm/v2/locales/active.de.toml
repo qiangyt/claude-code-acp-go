@@ -1,0 +1,208 @@
+# go-comm Deutsche Nachrichten
+
+# Typkonvertierungsfehler
+[error.required]
+one = "{{.Hint}}.{{.Key}} ist erforderlich"
+other = "{{.Hint}}.{{.Key}} ist erforderlich"
+
+[error.type.string]
+one = "{{.Hint}} muss eine Zeichenfolge sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss eine Zeichenfolge sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} muss ein Zeichenfolgen-Array sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss ein Zeichenfolgen-Array sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} muss eine Zeichenfolgen-Map sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss eine Zeichenfolgen-Map sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} muss eine Ganzzahl sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss eine Ganzzahl sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} muss ein Ganzzahl-Array sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss ein Ganzzahl-Array sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} muss eine Ganzzahl-Map sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss eine Ganzzahl-Map sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} muss ein Float64 sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss ein Float64 sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} muss ein Float64-Array sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss ein Float64-Array sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} muss eine Float64-Map sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss eine Float64-Map sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} muss ein Boolean sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss ein Boolean sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} muss ein Boolean-Array sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss ein Boolean-Array sein, ist aber {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} muss eine Boolean-Map sein, ist aber {{.Type}}({{.Value}})"
+other = "{{.Hint}} muss eine Boolean-Map sein, ist aber {{.Type}}({{.Value}})"
+
+# Plugin-Fehler
+[error.plugin.version_mismatch]
+one = "erwartete Hauptversion des Plugins {{.Namespace}}/{{.Name}} ist {{.Expected}}, aber sie ist {{.Actual}}"
+other = "erwartete Hauptversion des Plugins {{.Namespace}}/{{.Name}} ist {{.Expected}}, aber sie ist {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "Plugin {{.Namespace}}/{{.Name}} beansprucht nicht unterstützten Plugin-Typ {{.Kind}}"
+other = "Plugin {{.Namespace}}/{{.Name}} beansprucht nicht unterstützten Plugin-Typ {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "Namespace nicht angegeben: {{.Loader}}"
+other = "Namespace nicht angegeben: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "Plugin-Namespace {{.Namespace}} ist bereits registriert von: {{.Loader}}"
+other = "Plugin-Namespace {{.Namespace}} ist bereits registriert von: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "Plugin {{.Namespace}} hat doppelten Typ {{.Kind}} mit {{.Loader}}"
+other = "Plugin {{.Namespace}} hat doppelten Typ {{.Kind}} mit {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "Plugin starten: {{.PluginId}} (Version {{.Version}}), Ursache: {{.Cause}}"
+other = "Plugin starten: {{.PluginId}} (Version {{.Version}}), Ursache: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "Plugin stoppen: {{.PluginId}} (Version {{.Version}}), Ursache: {{.Cause}}"
+other = "Plugin stoppen: {{.PluginId}} (Version {{.Version}}), Ursache: {{.Cause}}"
+
+# Plugin-Logmeldungen
+[log.plugin.loader.starting]
+one = "Plugin-Loader wird gestartet"
+other = "Plugin-Loader wird gestartet"
+
+[log.plugin.loader.started]
+one = "Plugin-Loader gestartet"
+other = "Plugin-Loader gestartet"
+
+[log.plugin.loader.start_failed]
+one = "Plugin-Loader starten fehlgeschlagen"
+other = "Plugin-Loader starten fehlgeschlagen"
+
+[log.plugin.loader.stopping]
+one = "Plugin-Loader wird gestoppt"
+other = "Plugin-Loader wird gestoppt"
+
+[log.plugin.loader.stopped]
+one = "Plugin-Loader gestoppt"
+other = "Plugin-Loader gestoppt"
+
+[log.plugin.loader.stop_failed]
+one = "Plugin-Loader stoppen fehlgeschlagen"
+other = "Plugin-Loader stoppen fehlgeschlagen"
+
+# Dateifehler
+[error.file.already_exists]
+one = "Datei existiert bereits: {{.Path}}"
+other = "Datei existiert bereits: {{.Path}}"
+
+[error.file.not_found]
+one = "Datei nicht gefunden: {{.Path}}"
+other = "Datei nicht gefunden: {{.Path}}"
+
+[error.dir.already_exists]
+one = "Verzeichnis existiert bereits: {{.Path}}"
+other = "Verzeichnis existiert bereits: {{.Path}}"
+
+[error.dir.not_found]
+one = "Verzeichnis nicht gefunden: {{.Path}}"
+other = "Verzeichnis nicht gefunden: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "erwartet, dass {{.Path}} eine Datei ist, aber es ist ein Verzeichnis"
+other = "erwartet, dass {{.Path}} eine Datei ist, aber es ist ein Verzeichnis"
+
+[error.file.expect_dir_but_file]
+one = "erwartet, dass {{.Path}} ein Verzeichnis ist, aber es ist eine Datei"
+other = "erwartet, dass {{.Path}} ein Verzeichnis ist, aber es ist eine Datei"
+
+[error.file.cannot_remove_root]
+one = "Root-Verzeichnis sollte NICHT entfernt werden"
+other = "Root-Verzeichnis sollte NICHT entfernt werden"
+
+# Umgebungsdatei-Fehler
+[error.env.zero_length_string]
+one = "Zeichenfolge mit Länge Null"
+other = "Zeichenfolge mit Länge Null"
+
+[error.env.cannot_separate_key_value]
+one = "Schlüssel vom Wert kann nicht getrennt werden"
+other = "Schlüssel vom Wert kann nicht getrennt werden"
+
+# Netzwerkfehler
+[error.net.interface_not_found]
+one = "Schnittstelle {{.Interface}} nicht gefunden, herunter oder unterstützt keinen Broadcast"
+other = "Schnittstelle {{.Interface}} nicht gefunden, herunter oder unterstützt keinen Broadcast"
+
+# Fehlermeldungen für Dateioperationen
+[InvalidChmodValue]
+one = "ungültiger chmod-Wert: {{.value}}"
+other = "ungültiger chmod-Wert: {{.value}}"
+
+[FailedToChmod]
+one = "chmod fehlgeschlagen"
+other = "chmod fehlgeschlagen"
+
+[FailedToChown]
+one = "chown fehlgeschlagen, Ausgabe: {{.output}}"
+other = "chown fehlgeschlagen, Ausgabe: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "Zielverzeichnis erstellen fehlgeschlagen"
+other = "Zielverzeichnis erstellen fehlgeschlagen"
+
+[FailedToOpenSource]
+one = "Quelldatei öffnen fehlgeschlagen"
+other = "Quelldatei öffnen fehlgeschlagen"
+
+[FailedToCreateDest]
+one = "Zieldatei erstellen fehlgeschlagen"
+other = "Zieldatei erstellen fehlgeschlagen"
+
+[FailedToCopyFile]
+one = "Datei kopieren fehlgeschlagen"
+other = "Datei kopieren fehlgeschlagen"
+
+[FailedToRemoveSource]
+one = "Quelldatei nach dem Kopieren entfernen fehlgeschlagen"
+other = "Quelldatei nach dem Kopieren entfernen fehlgeschlagen"
+
+[FailedToCreateLinkDir]
+one = "Link-Verzeichnis erstellen fehlgeschlagen"
+other = "Link-Verzeichnis erstellen fehlgeschlagen"
+
+[FailedToCreateSymlink]
+one = "symbolischen Link erstellen fehlgeschlagen, Ausgabe: {{.output}}"
+other = "symbolischen Link erstellen fehlgeschlagen, Ausgabe: {{.output}}"
+
+[FailedToCreateDir]
+one = "Verzeichnis erstellen fehlgeschlagen"
+other = "Verzeichnis erstellen fehlgeschlagen"
+
+[FailedToGetFileSize]
+one = "Dateigröße abrufen fehlgeschlagen"
+other = "Dateigröße abrufen fehlgeschlagen"
+
+[FailedToRenameFile]
+one = "Datei umbenennen fehlgeschlagen"
+other = "Datei umbenennen fehlgeschlagen"
+
+[FailedToCreateDirSudo]
+one = "Verzeichnis mit sudo erstellen fehlgeschlagen, Ausgabe: {{.output}}"
+other = "Verzeichnis mit sudo erstellen fehlgeschlagen, Ausgabe: {{.output}}"

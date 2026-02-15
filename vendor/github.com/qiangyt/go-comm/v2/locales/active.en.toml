@@ -1,0 +1,208 @@
+# go-comm English Messages
+
+# Type conversion errors
+[error.required]
+one = "{{.Hint}}.{{.Key}} is required"
+other = "{{.Hint}}.{{.Key}} is required"
+
+[error.type.string]
+one = "{{.Hint}} must be a string, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a string, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} must be a string array, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a string array, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} must be a string map, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a string map, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} must be a int, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a int, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} must be a int array, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a int array, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} must be a int map, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a int map, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} must be a float64, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a float64, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} must be a float64 array, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a float64 array, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} must be a float64 map, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a float64 map, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} must be a bool, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a bool, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} must be a bool array, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a bool array, but now it is a {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} must be a bool map, but now it is a {{.Type}}({{.Value}})"
+other = "{{.Hint}} must be a bool map, but now it is a {{.Type}}({{.Value}})"
+
+# Plugin errors
+[error.plugin.version_mismatch]
+one = "expect plugin {{.Namespace}}/{{.Name}} major version is {{.Expected}}, but it is {{.Actual}}"
+other = "expect plugin {{.Namespace}}/{{.Name}} major version is {{.Expected}}, but it is {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "plugin {{.Namespace}}/{{.Name}} claims unsupported plugin kind {{.Kind}}"
+other = "plugin {{.Namespace}}/{{.Name}} claims unsupported plugin kind {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "namespace not specified: {{.Loader}}"
+other = "namespace not specified: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "plugin namespace {{.Namespace}} is already registered by: {{.Loader}}"
+other = "plugin namespace {{.Namespace}} is already registered by: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "plugin {{.Namespace}} has duplicated kind {{.Kind}} with {{.Loader}}"
+other = "plugin {{.Namespace}} has duplicated kind {{.Kind}} with {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "start plugin: {{.PluginId}} (version {{.Version}}), cause: {{.Cause}}"
+other = "start plugin: {{.PluginId}} (version {{.Version}}), cause: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "stop plugin: {{.PluginId}} (version {{.Version}}), cause: {{.Cause}}"
+other = "stop plugin: {{.PluginId}} (version {{.Version}}), cause: {{.Cause}}"
+
+# Plugin log messages
+[log.plugin.loader.starting]
+one = "starting plugin loader"
+other = "starting plugin loader"
+
+[log.plugin.loader.started]
+one = "started plugin loader"
+other = "started plugin loader"
+
+[log.plugin.loader.start_failed]
+one = "failed to start plugin loader"
+other = "failed to start plugin loader"
+
+[log.plugin.loader.stopping]
+one = "stopping plugin loader"
+other = "stopping plugin loader"
+
+[log.plugin.loader.stopped]
+one = "stopped plugin loader"
+other = "stopped plugin loader"
+
+[log.plugin.loader.stop_failed]
+one = "failed to stop plugin loader"
+other = "failed to stop plugin loader"
+
+# File errors
+[error.file.already_exists]
+one = "file already exists: {{.Path}}"
+other = "file already exists: {{.Path}}"
+
+[error.file.not_found]
+one = "file not found: {{.Path}}"
+other = "file not found: {{.Path}}"
+
+[error.dir.already_exists]
+one = "directory already exists: {{.Path}}"
+other = "directory already exists: {{.Path}}"
+
+[error.dir.not_found]
+one = "directory not found: {{.Path}}"
+other = "directory not found: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "expect {{.Path}} be file, but it is directory"
+other = "expect {{.Path}} be file, but it is directory"
+
+[error.file.expect_dir_but_file]
+one = "expect {{.Path}} be directory, but it is file"
+other = "expect {{.Path}} be directory, but it is file"
+
+[error.file.cannot_remove_root]
+one = "should NOT remove root directory"
+other = "should NOT remove root directory"
+
+# Env file errors
+[error.env.zero_length_string]
+one = "zero length string"
+other = "zero length string"
+
+[error.env.cannot_separate_key_value]
+one = "can't separate key from value"
+other = "can't separate key from value"
+
+# Network errors
+[error.net.interface_not_found]
+one = "interface {{.Interface}} is not found, or down, or not supports broadcast"
+other = "interface {{.Interface}} is not found, or down, or not supports broadcast"
+
+# File Operation Error Messages
+[InvalidChmodValue]
+one = "invalid chmod value: {{.value}}"
+other = "invalid chmod value: {{.value}}"
+
+[FailedToChmod]
+one = "failed to chmod"
+other = "failed to chmod"
+
+[FailedToChown]
+one = "failed to chown, output: {{.output}}"
+other = "failed to chown, output: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "failed to create destination directory"
+other = "failed to create destination directory"
+
+[FailedToOpenSource]
+one = "failed to open source file"
+other = "failed to open source file"
+
+[FailedToCreateDest]
+one = "failed to create destination file"
+other = "failed to create destination file"
+
+[FailedToCopyFile]
+one = "failed to copy file"
+other = "failed to copy file"
+
+[FailedToRemoveSource]
+one = "failed to remove source file after copy"
+other = "failed to remove source file after copy"
+
+[FailedToCreateLinkDir]
+one = "failed to create link directory"
+other = "failed to create link directory"
+
+[FailedToCreateSymlink]
+one = "failed to create symbolic link, output: {{.output}}"
+other = "failed to create symbolic link, output: {{.output}}"
+
+[FailedToCreateDir]
+one = "failed to create directory"
+other = "failed to create directory"
+
+[FailedToGetFileSize]
+one = "failed to get file size"
+other = "failed to get file size"
+
+[FailedToRenameFile]
+one = "failed to rename file"
+other = "failed to rename file"
+
+[FailedToCreateDirSudo]
+one = "failed to create directory with sudo, output: {{.output}}"
+other = "failed to create directory with sudo, output: {{.output}}"

@@ -1,0 +1,208 @@
+# go-comm Русские сообщения
+
+# Ошибки преобразования типов
+[error.required]
+one = "{{.Hint}}.{{.Key}} обязательно"
+other = "{{.Hint}}.{{.Key}} обязательно"
+
+[error.type.string]
+one = "{{.Hint}} должно быть строкой, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должно быть строкой, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} должен быть строковым массивом, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть строковым массивом, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} должен быть строковым отображением, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть строковым отображением, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} должно быть целым числом, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должно быть целым числом, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} должен быть целочисленным массивом, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть целочисленным массивом, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} должен быть целочисленным отображением, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть целочисленным отображением, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} должно быть числом с плавающей точкой, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должно быть числом с плавающей точкой, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} должен быть массивом чисел с плавающей точкой, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть массивом чисел с плавающей точкой, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} должно быть отображением чисел с плавающей точкой, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должно быть отображением чисел с плавающей точкой, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} должно быть логическим значением, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должно быть логическим значением, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} должен быть логическим массивом, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть логическим массивом, но сейчас {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} должен быть логическим отображением, но сейчас {{.Type}}({{.Value}})"
+other = "{{.Hint}} должен быть логическим отображением, но сейчас {{.Type}}({{.Value}})"
+
+# Ошибки плагинов
+[error.plugin.version_mismatch]
+one = "ожидается major версия плагина {{.Namespace}}/{{.Name}} {{.Expected}}, но она {{.Actual}}"
+other = "ожидается major версия плагина {{.Namespace}}/{{.Name}} {{.Expected}}, но она {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "плагин {{.Namespace}}/{{.Name}} заявляет неподдерживаемый вид {{.Kind}}"
+other = "плагин {{.Namespace}}/{{.Name}} заявляет неподдерживаемый вид {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "пространство имен не указано: {{.Loader}}"
+other = "пространство имен не указано: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "пространство имен плагина {{.Namespace}} уже зарегистрировано: {{.Loader}}"
+other = "пространство имен плагина {{.Namespace}} уже зарегистрировано: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "плагин {{.Namespace}} имеет дублированный вид {{.Kind}} с {{.Loader}}"
+other = "плагин {{.Namespace}} имеет дублированный вид {{.Kind}} с {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "запуск плагина: {{.PluginId}} (версия {{.Version}}), причина: {{.Cause}}"
+other = "запуск плагина: {{.PluginId}} (версия {{.Version}}), причина: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "остановка плагина: {{.PluginId}} (версия {{.Version}}), причина: {{.Cause}}"
+other = "остановка плагина: {{.PluginId}} (версия {{.Version}}), причина: {{.Cause}}"
+
+# Логические сообщения плагина
+[log.plugin.loader.starting]
+one = "запуск загрузчика плагинов"
+other = "запуск загрузчика плагинов"
+
+[log.plugin.loader.started]
+one = "загрузчик плагинов запущен"
+other = "загрузчик плагинов запущен"
+
+[log.plugin.loader.start_failed]
+one = "не удалось запустить загрузчик плагинов"
+other = "не удалось запустить загрузчик плагинов"
+
+[log.plugin.loader.stopping]
+one = "остановка загрузчика плагинов"
+other = "остановка загрузчика плагинов"
+
+[log.plugin.loader.stopped]
+one = "загрузчик плагинов остановлен"
+other = "загрузчик плагинов остановлен"
+
+[log.plugin.loader.stop_failed]
+one = "не удалось остановить загрузчик плагинов"
+other = "не удалось остановить загрузчик плагинов"
+
+# Ошибки файлов
+[error.file.already_exists]
+one = "файл уже существует: {{.Path}}"
+other = "файл уже существует: {{.Path}}"
+
+[error.file.not_found]
+one = "файл не найден: {{.Path}}"
+other = "файл не найден: {{.Path}}"
+
+[error.dir.already_exists]
+one = "каталог уже существует: {{.Path}}"
+other = "каталог уже существует: {{.Path}}"
+
+[error.dir.not_found]
+one = "каталог не найден: {{.Path}}"
+other = "каталог не найден: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "ожидается, что {{.Path}} является файлом, но это каталог"
+other = "ожидается, что {{.Path}} является файлом, но это каталог"
+
+[error.file.expect_dir_but_file]
+one = "ожидается, что {{.Path}} является каталогом, но это файл"
+other = "ожидается, что {{.Path}} является каталогом, но это файл"
+
+[error.file.cannot_remove_root]
+one = "НЕ следует удалять корневой каталог"
+other = "НЕ следует удалять корневой каталог"
+
+# Ошибки файлов окружения
+[error.env.zero_length_string]
+one = "строка нулевой длины"
+other = "строка нулевой длины"
+
+[error.env.cannot_separate_key_value]
+one = "невозможно разделить ключ и значение"
+other = "невозможно разделить ключ и значение"
+
+# Сетевые ошибки
+[error.net.interface_not_found]
+one = "интерфейс {{.Interface}} не найден, отключен или не поддерживает широковещательную передачу"
+other = "интерфейс {{.Interface}} не найден, отключен или не поддерживает широковещательную передачу"
+
+# Сообщения об ошибках файловых операций
+[InvalidChmodValue]
+one = "недопустимое значение chmod: {{.value}}"
+other = "недопустимое значение chmod: {{.value}}"
+
+[FailedToChmod]
+one = "не удалось выполнить chmod"
+other = "не удалось выполнить chmod"
+
+[FailedToChown]
+one = "не удалось выполнить chown, вывод: {{.output}}"
+other = "не удалось выполнить chown, вывод: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "не удалось создать целевой каталог"
+other = "не удалось создать целевой каталог"
+
+[FailedToOpenSource]
+one = "не удалось открыть исходный файл"
+other = "не удалось открыть исходный файл"
+
+[FailedToCreateDest]
+one = "не удалось создать целевой файл"
+other = "не удалось создать целевой файл"
+
+[FailedToCopyFile]
+one = "не удалось скопировать файл"
+other = "не удалось скопировать файл"
+
+[FailedToRemoveSource]
+one = "не удалось удалить исходный файл после копирования"
+other = "не удалось удалить исходный файл после копирования"
+
+[FailedToCreateLinkDir]
+one = "не удалось создать каталог ссылок"
+other = "не удалось создать каталог ссылок"
+
+[FailedToCreateSymlink]
+one = "не удалось создать символическую ссылку, вывод: {{.output}}"
+other = "не удалось создать символическую ссылку, вывод: {{.output}}"
+
+[FailedToCreateDir]
+one = "не удалось создать каталог"
+other = "не удалось создать каталог"
+
+[FailedToGetFileSize]
+one = "не удалось получить размер файла"
+other = "не удалось получить размер файла"
+
+[FailedToRenameFile]
+one = "не удалось переименовать файл"
+other = "не удалось переименовать файл"
+
+[FailedToCreateDirSudo]
+one = "не удалось создать каталог с помощью sudo, вывод: {{.output}}"
+other = "не удалось создать каталог с помощью sudo, вывод: {{.output}}"

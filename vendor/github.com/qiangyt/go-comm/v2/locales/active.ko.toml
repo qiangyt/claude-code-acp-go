@@ -1,0 +1,208 @@
+# go-comm 한국어 메시지
+
+# 유형 변환 오류
+[error.required]
+one = "{{.Hint}}.{{.Key}}이(가) 필요합니다"
+other = "{{.Hint}}.{{.Key}}이(가) 필요합니다"
+
+[error.type.string]
+one = "{{.Hint}}은(는) 문자열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 문자열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.string_array]
+one = "{{.Hint}}은(는) 문자열 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 문자열 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.string_map]
+one = "{{.Hint}}은(는) 문자열 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 문자열 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.int]
+one = "{{.Hint}}은(는) 정수이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 정수이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.int_array]
+one = "{{.Hint}}은(는) 정수 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 정수 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.int_map]
+one = "{{.Hint}}은(는) 정수 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 정수 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.float]
+one = "{{.Hint}}은(는) float64이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) float64이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.float_array]
+one = "{{.Hint}}은(는) float64 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) float64 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.float_map]
+one = "{{.Hint}}은(는) float64 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) float64 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.bool]
+one = "{{.Hint}}은(는) 부울이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 부울이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.bool_array]
+one = "{{.Hint}}은(는) 부울 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 부울 배열이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+[error.type.bool_map]
+one = "{{.Hint}}은(는) 부울 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+other = "{{.Hint}}은(는) 부울 맵이어야 하지만 현재 {{.Type}}({{.Value}})입니다"
+
+# 플러그인 오류
+[error.plugin.version_mismatch]
+one = "플러그인 {{.Namespace}}/{{.Name}}의 주 버전이 {{.Expected}}이어야 하지만 {{.Actual}}입니다"
+other = "플러그인 {{.Namespace}}/{{.Name}}의 주 버전이 {{.Expected}}이어야 하지만 {{.Actual}}입니다"
+
+[error.plugin.unsupported_kind]
+one = "플러그인 {{.Namespace}}/{{.Name}}이(가) 지원되지 않는 플러그인 종류 {{.Kind}}을(를) 선언합니다"
+other = "플러그인 {{.Namespace}}/{{.Name}}이(가) 지원되지 않는 플러그인 종류 {{.Kind}}을(를) 선언합니다"
+
+[error.plugin.namespace_not_specified]
+one = "네임스페이스가 지정되지 않았습니다: {{.Loader}}"
+other = "네임스페이스가 지정되지 않았습니다: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "플러그인 네임스페이스 {{.Namespace}}이(가) 이미 등록되었습니다: {{.Loader}}"
+other = "플러그인 네임스페이스 {{.Namespace}}이(가) 이미 등록되었습니다: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "플러그인 {{.Namespace}}에(가) {{.Loader}}과(와) 중복된 종류 {{.Kind}}이(가) 있습니다"
+other = "플러그인 {{.Namespace}}에(가) {{.Loader}}과(와) 중복된 종류 {{.Kind}}이(가) 있습니다"
+
+[error.plugin.start_failed]
+one = "플러그인 시작: {{.PluginId}} (버전 {{.Version}}), 원인: {{.Cause}}"
+other = "플러그인 시작: {{.PluginId}} (버전 {{.Version}}), 원인: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "플러그인 중지: {{.PluginId}} (버전 {{.Version}}), 원인: {{.Cause}}"
+other = "플러그인 중지: {{.PluginId}} (버전 {{.Version}}), 원인: {{.Cause}}"
+
+# 플러그인 로그 메시지
+[log.plugin.loader.starting]
+one = "플러그인 로더 시작 중"
+other = "플러그인 로더 시작 중"
+
+[log.plugin.loader.started]
+one = "플러그인 로더가 시작되었습니다"
+other = "플러그인 로더가 시작되었습니다"
+
+[log.plugin.loader.start_failed]
+one = "플러그인 로더 시작 실패"
+other = "플러그인 로더 시작 실패"
+
+[log.plugin.loader.stopping]
+one = "플러그인 로더 중지 중"
+other = "플러그인 로더 중지 중"
+
+[log.plugin.loader.stopped]
+one = "플러그인 로더가 중지되었습니다"
+other = "플러그인 로더가 중지되었습니다"
+
+[log.plugin.loader.stop_failed]
+one = "플러그인 로더 중지 실패"
+other = "플러그인 로더 중지 실패"
+
+# 파일 오류
+[error.file.already_exists]
+one = "파일이 이미 존재합니다: {{.Path}}"
+other = "파일이 이미 존재합니다: {{.Path}}"
+
+[error.file.not_found]
+one = "파일을 찾을 수 없습니다: {{.Path}}"
+other = "파일을 찾을 수 없습니다: {{.Path}}"
+
+[error.dir.already_exists]
+one = "디렉터리가 이미 존재합니다: {{.Path}}"
+other = "디렉터리가 이미 존재합니다: {{.Path}}"
+
+[error.dir.not_found]
+one = "디렉터리를 찾을 수 없습니다: {{.Path}}"
+other = "디렉터리를 찾을 수 없습니다: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "{{.Path}}은(는) 파일이어야 하지만 디렉터리입니다"
+other = "{{.Path}}은(는) 파일이어야 하지만 디렉터리입니다"
+
+[error.file.expect_dir_but_file]
+one = "{{.Path}}은(는) 디렉터리이어야 하지만 파일입니다"
+other = "{{.Path}}은(는) 디렉터리이어야 하지만 파일입니다"
+
+[error.file.cannot_remove_root]
+one = "루트 디렉터리를 제거해서는 안 됩니다"
+other = "루트 디렉터리를 제거해서는 안 됩니다"
+
+# 환경 파일 오류
+[error.env.zero_length_string]
+one = "길이가 0인 문자열"
+other = "길이가 0인 문자열"
+
+[error.env.cannot_separate_key_value]
+one = "키와 값을 분리할 수 없습니다"
+other = "키와 값을 분리할 수 없습니다"
+
+# 네트워크 오류
+[error.net.interface_not_found]
+one = "인터페이스 {{.Interface}}을(를) 찾을 수 없거나, 다운되었거나, 브로드캐스트를 지원하지 않습니다"
+other = "인터페이스 {{.Interface}}을(를) 찾을 수 없거나, 다운되었거나, 브로드캐스트를 지원하지 않습니다"
+
+# 파일 작업 오류 메시지
+[InvalidChmodValue]
+one = "잘못된 chmod 값: {{.value}}"
+other = "잘못된 chmod 값: {{.value}}"
+
+[FailedToChmod]
+one = "chmod 실패"
+other = "chmod 실패"
+
+[FailedToChown]
+one = "chown 실패, 출력: {{.output}}"
+other = "chown 실패, 출력: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "대상 디렉터리 생성 실패"
+other = "대상 디렉터리 생성 실패"
+
+[FailedToOpenSource]
+one = "소스 파일 열기 실패"
+other = "소스 파일 열기 실패"
+
+[FailedToCreateDest]
+one = "대상 파일 생성 실패"
+other = "대상 파일 생성 실패"
+
+[FailedToCopyFile]
+one = "파일 복사 실패"
+other = "파일 복사 실패"
+
+[FailedToRemoveSource]
+one = "복사 후 소스 파일 제거 실패"
+other = "복사 후 소스 파일 제거 실패"
+
+[FailedToCreateLinkDir]
+one = "링크 디렉터리 생성 실패"
+other = "링크 디렉터리 생성 실패"
+
+[FailedToCreateSymlink]
+one = "심볼릭 링크 생성 실패, 출력: {{.output}}"
+other = "심볼릭 링크 생성 실패, 출력: {{.output}}"
+
+[FailedToCreateDir]
+one = "디렉터리 생성 실패"
+other = "디렉터리 생성 실패"
+
+[FailedToGetFileSize]
+one = "파일 크기 가져오기 실패"
+other = "파일 크기 가져오기 실패"
+
+[FailedToRenameFile]
+one = "파일 이름 바꾸기 실패"
+other = "파일 이름 바꾸기 실패"
+
+[FailedToCreateDirSudo]
+one = "sudo를 사용하여 디렉터리 생성 실패, 출력: {{.output}}"
+other = "sudo를 사용하여 디렉터리 생성 실패, 출력: {{.output}}"

@@ -1,0 +1,208 @@
+# go-comm Tiếng Việt
+
+# Lỗi chuyển đổi kiểu
+[error.required]
+one = "{{.Hint}}.{{.Key}} là bắt buộc"
+other = "{{.Hint}}.{{.Key}} là bắt buộc"
+
+[error.type.string]
+one = "{{.Hint}} phải là chuỗi, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là chuỗi, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} phải là mảng chuỗi, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là mảng chuỗi, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} phải là bản đồ chuỗi, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là bản đồ chuỗi, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} phải là số nguyên, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là số nguyên, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} phải là mảng số nguyên, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là mảng số nguyên, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} phải là bản đồ số nguyên, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là bản đồ số nguyên, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} phải là float64, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là float64, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} phải là mảng float64, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là mảng float64, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} phải là bản đồ float64, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là bản đồ float64, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} phải là boolean, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là boolean, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} phải là mảng boolean, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là mảng boolean, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} phải là bản đồ boolean, nhưng bây giờ là {{.Type}}({{.Value}})"
+other = "{{.Hint}} phải là bản đồ boolean, nhưng bây giờ là {{.Type}}({{.Value}})"
+
+# Lỗi plugin
+[error.plugin.version_mismatch]
+one = "mong đợi phiên bản chính của plugin {{.Namespace}}/{{.Name}} là {{.Expected}}, nhưng nó là {{.Actual}}"
+other = "mong đợi phiên bản chính của plugin {{.Namespace}}/{{.Name}} là {{.Expected}}, nhưng nó là {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "plugin {{.Namespace}}/{{.Name}} tuyên bố loại plugin không được hỗ trợ {{.Kind}}"
+other = "plugin {{.Namespace}}/{{.Name}} tuyên bố loại plugin không được hỗ trợ {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "không gian tên không được chỉ định: {{.Loader}}"
+other = "không gian tên không được chỉ định: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "không gian tên plugin {{.Namespace}} đã được đăng ký bởi: {{.Loader}}"
+other = "không gian tên plugin {{.Namespace}} đã được đăng ký bởi: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "plugin {{.Namespace}} có loại trùng lặp {{.Kind}} với {{.Loader}}"
+other = "plugin {{.Namespace}} có loại trùng lặp {{.Kind}} với {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "khởi chạy plugin: {{.PluginId}} (phiên bản {{.Version}}), nguyên nhân: {{.Cause}}"
+other = "khởi chạy plugin: {{.PluginId}} (phiên bản {{.Version}}), nguyên nhân: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "dừng plugin: {{.PluginId}} (phiên bản {{.Version}}), nguyên nhân: {{.Cause}}"
+other = "dừng plugin: {{.PluginId}} (phiên bản {{.Version}}), nguyên nhân: {{.Cause}}"
+
+# Thông tin log plugin
+[log.plugin.loader.starting]
+one = "đang khởi động bộ tải plugin"
+other = "đang khởi động bộ tải plugin"
+
+[log.plugin.loader.started]
+one = "bộ tải plugin đã khởi động"
+other = "bộ tải plugin đã khởi động"
+
+[log.plugin.loader.start_failed]
+one = "không thể khởi động bộ tải plugin"
+other = "không thể khởi động bộ tải plugin"
+
+[log.plugin.loader.stopping]
+one = "đang dừng bộ tải plugin"
+other = "đang dừng bộ tải plugin"
+
+[log.plugin.loader.stopped]
+one = "bộ tải plugin đã dừng"
+other = "bộ tải plugin đã dừng"
+
+[log.plugin.loader.stop_failed]
+one = "không thể dừng bộ tải plugin"
+other = "không thể dừng bộ tải plugin"
+
+# Lỗi tệp
+[error.file.already_exists]
+one = "tệp đã tồn tại: {{.Path}}"
+other = "tệp đã tồn tại: {{.Path}}"
+
+[error.file.not_found]
+one = "không tìm thấy tệp: {{.Path}}"
+other = "không tìm thấy tệp: {{.Path}}"
+
+[error.dir.already_exists]
+one = "thư mục đã tồn tại: {{.Path}}"
+other = "thư mục đã tồn tại: {{.Path}}"
+
+[error.dir.not_found]
+one = "không tìm thấy thư mục: {{.Path}}"
+other = "không tìm thấy thư mục: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "mong đợi {{.Path}} là tệp, nhưng nó là thư mục"
+other = "mong đợi {{.Path}} là tệp, nhưng nó là thư mục"
+
+[error.file.expect_dir_but_file]
+one = "mong đợi {{.Path}} là thư mục, nhưng nó là tệp"
+other = "mong đợi {{.Path}} là thư mục, nhưng nó là tệp"
+
+[error.file.cannot_remove_root]
+one = "KHÔNG NÊN xóa thư mục gốc"
+other = "KHÔNG NÊN xóa thư mục gốc"
+
+# Lỗi tệp môi trường
+[error.env.zero_length_string]
+one = "chuỗi có độ dài bằng không"
+other = "chuỗi có độ dài bằng không"
+
+[error.env.cannot_separate_key_value]
+one = "không thể tách khóa khỏi giá trị"
+other = "không thể tách khóa khỏi giá trị"
+
+# Lỗi mạng
+[error.net.interface_not_found]
+one = "giao diện {{.Interface}} không được tìm thấy, đang tắt hoặc không hỗ trợ broadcast"
+other = "giao diện {{.Interface}} không được tìm thấy, đang tắt hoặc không hỗ trợ broadcast"
+
+# Thông báo lỗi thao tác tệp
+[InvalidChmodValue]
+one = "giá trị chmod không hợp lệ: {{.value}}"
+other = "giá trị chmod không hợp lệ: {{.value}}"
+
+[FailedToChmod]
+one = "chmod thất bại"
+other = "chmod thất bại"
+
+[FailedToChown]
+one = "chown thất bại, đầu ra: {{.output}}"
+other = "chown thất bại, đầu ra: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "không thể tạo thư mục đích"
+other = "không thể tạo thư mục đích"
+
+[FailedToOpenSource]
+one = "không thể mở tệp nguồn"
+other = "không thể mở tệp nguồn"
+
+[FailedToCreateDest]
+one = "không thể tạo tệp đích"
+other = "không thể tạo tệp đích"
+
+[FailedToCopyFile]
+one = "không thể sao chép tệp"
+other = "không thể sao chép tệp"
+
+[FailedToRemoveSource]
+one = "không thể xóa tệp nguồn sau khi sao chép"
+other = "không thể xóa tệp nguồn sau khi sao chép"
+
+[FailedToCreateLinkDir]
+one = "không thể tạo thư mục liên kết"
+other = "không thể tạo thư mục liên kết"
+
+[FailedToCreateSymlink]
+one = "không thể tạo liên kết tượng trưng, đầu ra: {{.output}}"
+other = "không thể tạo liên kết tượng trưng, đầu ra: {{.output}}"
+
+[FailedToCreateDir]
+one = "không thể tạo thư mục"
+other = "không thể tạo thư mục"
+
+[FailedToGetFileSize]
+one = "không thể lấy kích thước tệp"
+other = "không thể lấy kích thước tệp"
+
+[FailedToRenameFile]
+one = "không thể đổi tên tệp"
+other = "không thể đổi tên tệp"
+
+[FailedToCreateDirSudo]
+one = "không thể tạo thư mục với sudo, đầu ra: {{.output}}"
+other = "không thể tạo thư mục với sudo, đầu ra: {{.output}}"

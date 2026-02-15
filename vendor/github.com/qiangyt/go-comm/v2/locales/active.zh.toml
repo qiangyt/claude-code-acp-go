@@ -1,0 +1,208 @@
+# go-comm 中文消息
+
+# 类型转换错误
+[error.required]
+one = "{{.Hint}}.{{.Key}} 是必需的"
+other = "{{.Hint}}.{{.Key}} 是必需的"
+
+[error.type.string]
+one = "{{.Hint}} 必须是字符串类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是字符串类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} 必须是字符串数组类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是字符串数组类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} 必须是字符串映射类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是字符串映射类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} 必须是整数类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是整数类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} 必须是整数数组类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是整数数组类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} 必须是整数映射类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是整数映射类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} 必须是浮点数类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是浮点数类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} 必须是浮点数数组类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是浮点数数组类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} 必须是浮点数映射类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是浮点数映射类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} 必须是布尔类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是布尔类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} 必须是布尔数组类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是布尔数组类型，但现在是 {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} 必须是布尔映射类型，但现在是 {{.Type}}({{.Value}})"
+other = "{{.Hint}} 必须是布尔映射类型，但现在是 {{.Type}}({{.Value}})"
+
+# 插件错误
+[error.plugin.version_mismatch]
+one = "期望插件 {{.Namespace}}/{{.Name}} 主版本为 {{.Expected}}，但实际为 {{.Actual}}"
+other = "期望插件 {{.Namespace}}/{{.Name}} 主版本为 {{.Expected}}，但实际为 {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "插件 {{.Namespace}}/{{.Name}} 声明了不支持的插件类型 {{.Kind}}"
+other = "插件 {{.Namespace}}/{{.Name}} 声明了不支持的插件类型 {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "未指定命名空间: {{.Loader}}"
+other = "未指定命名空间: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "插件命名空间 {{.Namespace}} 已被注册: {{.Loader}}"
+other = "插件命名空间 {{.Namespace}} 已被注册: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "插件 {{.Namespace}} 的类型 {{.Kind}} 与 {{.Loader}} 重复"
+other = "插件 {{.Namespace}} 的类型 {{.Kind}} 与 {{.Loader}} 重复"
+
+[error.plugin.start_failed]
+one = "启动插件失败: {{.PluginId}} (版本 {{.Version}})，原因: {{.Cause}}"
+other = "启动插件失败: {{.PluginId}} (版本 {{.Version}})，原因: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "停止插件失败: {{.PluginId}} (版本 {{.Version}})，原因: {{.Cause}}"
+other = "停止插件失败: {{.PluginId}} (版本 {{.Version}})，原因: {{.Cause}}"
+
+# 插件日志消息
+[log.plugin.loader.starting]
+one = "正在启动插件加载器"
+other = "正在启动插件加载器"
+
+[log.plugin.loader.started]
+one = "插件加载器已启动"
+other = "插件加载器已启动"
+
+[log.plugin.loader.start_failed]
+one = "插件加载器启动失败"
+other = "插件加载器启动失败"
+
+[log.plugin.loader.stopping]
+one = "正在停止插件加载器"
+other = "正在停止插件加载器"
+
+[log.plugin.loader.stopped]
+one = "插件加载器已停止"
+other = "插件加载器已停止"
+
+[log.plugin.loader.stop_failed]
+one = "插件加载器停止失败"
+other = "插件加载器停止失败"
+
+# 文件错误
+[error.file.already_exists]
+one = "文件已存在: {{.Path}}"
+other = "文件已存在: {{.Path}}"
+
+[error.file.not_found]
+one = "文件未找到: {{.Path}}"
+other = "文件未找到: {{.Path}}"
+
+[error.dir.already_exists]
+one = "目录已存在: {{.Path}}"
+other = "目录已存在: {{.Path}}"
+
+[error.dir.not_found]
+one = "目录未找到: {{.Path}}"
+other = "目录未找到: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "期望 {{.Path}} 是文件，但它是目录"
+other = "期望 {{.Path}} 是文件，但它是目录"
+
+[error.file.expect_dir_but_file]
+one = "期望 {{.Path}} 是目录，但它是文件"
+other = "期望 {{.Path}} 是目录，但它是文件"
+
+[error.file.cannot_remove_root]
+one = "不应删除根目录"
+other = "不应删除根目录"
+
+# 环境变量文件错误
+[error.env.zero_length_string]
+one = "字符串长度为零"
+other = "字符串长度为零"
+
+[error.env.cannot_separate_key_value]
+one = "无法分离键值对"
+other = "无法分离键值对"
+
+# 网络错误
+[error.net.interface_not_found]
+one = "网络接口 {{.Interface}} 未找到、已关闭或不支持广播"
+other = "网络接口 {{.Interface}} 未找到、已关闭或不支持广播"
+
+# 文件操作错误消息
+[InvalidChmodValue]
+one = "无效的chmod值: {{.value}}"
+other = "无效的chmod值: {{.value}}"
+
+[FailedToChmod]
+one = "chmod失败"
+other = "chmod失败"
+
+[FailedToChown]
+one = "chown失败，输出: {{.output}}"
+other = "chown失败，输出: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "创建目标目录失败"
+other = "创建目标目录失败"
+
+[FailedToOpenSource]
+one = "打开源文件失败"
+other = "打开源文件失败"
+
+[FailedToCreateDest]
+one = "创建目标文件失败"
+other = "创建目标文件失败"
+
+[FailedToCopyFile]
+one = "复制文件失败"
+other = "复制文件失败"
+
+[FailedToRemoveSource]
+one = "复制后删除源文件失败"
+other = "复制后删除源文件失败"
+
+[FailedToCreateLinkDir]
+one = "创建链接目录失败"
+other = "创建链接目录失败"
+
+[FailedToCreateSymlink]
+one = "创建符号链接失败，输出: {{.output}}"
+other = "创建符号链接失败，输出: {{.output}}"
+
+[FailedToCreateDir]
+one = "创建目录失败"
+other = "创建目录失败"
+
+[FailedToGetFileSize]
+one = "获取文件大小失败"
+other = "获取文件大小失败"
+
+[FailedToRenameFile]
+one = "重命名文件失败"
+other = "重命名文件失败"
+
+[FailedToCreateDirSudo]
+one = "使用sudo创建目录失败，输出: {{.output}}"
+other = "使用sudo创建目录失败，输出: {{.output}}"

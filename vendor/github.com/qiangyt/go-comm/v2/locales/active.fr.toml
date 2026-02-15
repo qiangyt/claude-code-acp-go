@@ -1,0 +1,208 @@
+# go-comm Messages français
+
+# Erreurs de conversion de type
+[error.required]
+one = "{{.Hint}}.{{.Key}} est requis"
+other = "{{.Hint}}.{{.Key}} est requis"
+
+[error.type.string]
+one = "{{.Hint}} doit être une chaîne, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être une chaîne, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} doit être un tableau de chaînes, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un tableau de chaînes, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} doit être une carte de chaînes, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être une carte de chaînes, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} doit être un entier, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un entier, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} doit être un tableau d'entiers, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un tableau d'entiers, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} doit être une carte d'entiers, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être une carte d'entiers, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} doit être un float64, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un float64, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} doit être un tableau de float64, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un tableau de float64, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} doit être une carte de float64, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être une carte de float64, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} doit être un booléen, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un booléen, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} doit être un tableau de booléens, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être un tableau de booléens, mais c'est {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} doit être une carte de booléens, mais c'est {{.Type}}({{.Value}})"
+other = "{{.Hint}} doit être une carte de booléens, mais c'est {{.Type}}({{.Value}})"
+
+# Erreurs de plugin
+[error.plugin.version_mismatch]
+one = "la version majeure du plugin {{.Namespace}}/{{.Name}} devrait être {{.Expected}}, mais elle est {{.Actual}}"
+other = "la version majeure du plugin {{.Namespace}}/{{.Name}} devrait être {{.Expected}}, mais elle est {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "le plugin {{.Namespace}}/{{.Name}} réclame un type de plugin non pris en charge {{.Kind}}"
+other = "le plugin {{.Namespace}}/{{.Name}} réclame un type de plugin non pris en charge {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "espace de noms non spécifié : {{.Loader}}"
+other = "espace de noms non spécifié : {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "l'espace de noms du plugin {{.Namespace}} est déjà enregistré par : {{.Loader}}"
+other = "l'espace de noms du plugin {{.Namespace}} est déjà enregistré par : {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "le plugin {{.Namespace}} a un type en double {{.Kind}} avec {{.Loader}}"
+other = "le plugin {{.Namespace}} a un type en double {{.Kind}} avec {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "démarrage du plugin : {{.PluginId}} (version {{.Version}}), cause : {{.Cause}}"
+other = "démarrage du plugin : {{.PluginId}} (version {{.Version}}), cause : {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "arrêt du plugin : {{.PluginId}} (version {{.Version}}), cause : {{.Cause}}"
+other = "arrêt du plugin : {{.PluginId}} (version {{.Version}}), cause : {{.Cause}}"
+
+# Messages de journal de plugin
+[log.plugin.loader.starting]
+one = "démarrage du chargeur de plugin"
+other = "démarrage du chargeur de plugin"
+
+[log.plugin.loader.started]
+one = "chargeur de plugin démarré"
+other = "chargeur de plugin démarré"
+
+[log.plugin.loader.start_failed]
+one = "échec du démarrage du chargeur de plugin"
+other = "échec du démarrage du chargeur de plugin"
+
+[log.plugin.loader.stopping]
+one = "arrêt du chargeur de plugin"
+other = "arrêt du chargeur de plugin"
+
+[log.plugin.loader.stopped]
+one = "chargeur de plugin arrêté"
+other = "chargeur de plugin arrêté"
+
+[log.plugin.loader.stop_failed]
+one = "échec de l'arrêt du chargeur de plugin"
+other = "échec de l'arrêt du chargeur de plugin"
+
+# Erreurs de fichier
+[error.file.already_exists]
+one = "le fichier existe déjà : {{.Path}}"
+other = "le fichier existe déjà : {{.Path}}"
+
+[error.file.not_found]
+one = "fichier non trouvé : {{.Path}}"
+other = "fichier non trouvé : {{.Path}}"
+
+[error.dir.already_exists]
+one = "le répertoire existe déjà : {{.Path}}"
+other = "le répertoire existe déjà : {{.Path}}"
+
+[error.dir.not_found]
+one = "répertoire non trouvé : {{.Path}}"
+other = "répertoire non trouvé : {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "attendait ce que {{.Path}} soit un fichier, mais c'est un répertoire"
+other = "attendait ce que {{.Path}} soit un fichier, mais c'est un répertoire"
+
+[error.file.expect_dir_but_file]
+one = "attendait ce que {{.Path}} soit un répertoire, mais c'est un fichier"
+other = "attendait ce que {{.Path}} soit un répertoire, mais c'est un fichier"
+
+[error.file.cannot_remove_root]
+one = "ne doit PAS supprimer le répertoire racine"
+other = "ne doit PAS supprimer le répertoire racine"
+
+# Erreurs de fichier d'environnement
+[error.env.zero_length_string]
+one = "chaîne de longueur nulle"
+other = "chaîne de longueur nulle"
+
+[error.env.cannot_separate_key_value]
+one = "impossible de séparer la clé de la valeur"
+other = "impossible de séparer la clé de la valeur"
+
+# Erreurs réseau
+[error.net.interface_not_found]
+one = "l'interface {{.Interface}} est introuvable, éteinte ou ne prend pas en charge la diffusion"
+other = "l'interface {{.Interface}} est introuvable, éteinte ou ne prend pas en charge la diffusion"
+
+# Messages d'erreur des opérations sur fichiers
+[InvalidChmodValue]
+one = "valeur chmod invalide : {{.value}}"
+other = "valeur chmod invalide : {{.value}}"
+
+[FailedToChmod]
+one = "échec de chmod"
+other = "échec de chmod"
+
+[FailedToChown]
+one = "échec de chown, sortie : {{.output}}"
+other = "échec de chown, sortie : {{.output}}"
+
+[FailedToCreateDestDir]
+one = "échec de la création du répertoire de destination"
+other = "échec de la création du répertoire de destination"
+
+[FailedToOpenSource]
+one = "échec de l'ouverture du fichier source"
+other = "échec de l'ouverture du fichier source"
+
+[FailedToCreateDest]
+one = "échec de la création du fichier de destination"
+other = "échec de la création du fichier de destination"
+
+[FailedToCopyFile]
+one = "échec de la copie du fichier"
+other = "échec de la copie du fichier"
+
+[FailedToRemoveSource]
+one = "échec de la suppression du fichier source après copie"
+other = "échec de la suppression du fichier source après copie"
+
+[FailedToCreateLinkDir]
+one = "échec de la création du répertoire de lien"
+other = "échec de la création du répertoire de lien"
+
+[FailedToCreateSymlink]
+one = "échec de la création du lien symbolique, sortie : {{.output}}"
+other = "échec de la création du lien symbolique, sortie : {{.output}}"
+
+[FailedToCreateDir]
+one = "échec de la création du répertoire"
+other = "échec de la création du répertoire"
+
+[FailedToGetFileSize]
+one = "échec de l'obtention de la taille du fichier"
+other = "échec de l'obtention de la taille du fichier"
+
+[FailedToRenameFile]
+one = "échec du renommage du fichier"
+other = "échec du renommage du fichier"
+
+[FailedToCreateDirSudo]
+one = "échec de la création du répertoire avec sudo, sortie : {{.output}}"
+other = "échec de la création du répertoire avec sudo, sortie : {{.output}}"

@@ -1,0 +1,208 @@
+# go-comm Pesan Bahasa Indonesia
+
+# Kesalahan konversi tipe
+[error.required]
+one = "{{.Hint}}.{{.Key}} diperlukan"
+other = "{{.Hint}}.{{.Key}} diperlukan"
+
+[error.type.string]
+one = "{{.Hint}} harus berupa string, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa string, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} harus berupa array string, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa array string, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} harus berupa peta string, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa peta string, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} harus berupa integer, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa integer, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} harus berupa array integer, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa array integer, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} harus berupa peta integer, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa peta integer, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} harus berupa float64, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa float64, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} harus berupa array float64, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa array float64, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} harus berupa peta float64, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa peta float64, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} harus berupa boolean, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa boolean, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} harus berupa array boolean, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa array boolean, tapi sekarang {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} harus berupa peta boolean, tapi sekarang {{.Type}}({{.Value}})"
+other = "{{.Hint}} harus berupa peta boolean, tapi sekarang {{.Type}}({{.Value}})"
+
+# Kesalahan plugin
+[error.plugin.version_mismatch]
+one = "versi utama plugin {{.Namespace}}/{{.Name}} diharapkan {{.Expected}}, tapi sekarang {{.Actual}}"
+other = "versi utama plugin {{.Namespace}}/{{.Name}} diharapkan {{.Expected}}, tapi sekarang {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "plugin {{.Namespace}}/{{.Name}} mengklaim jenis plugin yang tidak didukung {{.Kind}}"
+other = "plugin {{.Namespace}}/{{.Name}} mengklaim jenis plugin yang tidak didukung {{.Kind}}"
+
+[error.plugin.namespace_not_specified]
+one = "namespace tidak ditentukan: {{.Loader}}"
+other = "namespace tidak ditentukan: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "namespace plugin {{.Namespace}} sudah terdaftar oleh: {{.Loader}}"
+other = "namespace plugin {{.Namespace}} sudah terdaftar oleh: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "plugin {{.Namespace}} memiliki jenis duplikat {{.Kind}} dengan {{.Loader}}"
+other = "plugin {{.Namespace}} memiliki jenis duplikat {{.Kind}} dengan {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "mulai plugin: {{.PluginId}} (versi {{.Version}}), penyebab: {{.Cause}}"
+other = "mulai plugin: {{.PluginId}} (versi {{.Version}}), penyebab: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "hentikan plugin: {{.PluginId}} (versi {{.Version}}), penyebab: {{.Cause}}"
+other = "hentikan plugin: {{.PluginId}} (versi {{.Version}}), penyebab: {{.Cause}}"
+
+# Pesan log plugin
+[log.plugin.loader.starting]
+one = "memulai pemuat plugin"
+other = "memulai pemuat plugin"
+
+[log.plugin.loader.started]
+one = "pemuat plugin dimulai"
+other = "pemuat plugin dimulai"
+
+[log.plugin.loader.start_failed]
+one = "gagal memulai pemuat plugin"
+other = "gagal memulai pemuat plugin"
+
+[log.plugin.loader.stopping]
+one = "menghentikan pemuat plugin"
+other = "menghentikan pemuat plugin"
+
+[log.plugin.loader.stopped]
+one = "pemuat plugin dihentikan"
+other = "pemuat plugin dihentikan"
+
+[log.plugin.loader.stop_failed]
+one = "gagal menghentikan pemuat plugin"
+other = "gagal menghentikan pemuat plugin"
+
+# Kesalahan file
+[error.file.already_exists]
+one = "file sudah ada: {{.Path}}"
+other = "file sudah ada: {{.Path}}"
+
+[error.file.not_found]
+one = "file tidak ditemukan: {{.Path}}"
+other = "file tidak ditemukan: {{.Path}}"
+
+[error.dir.already_exists]
+one = "direktori sudah ada: {{.Path}}"
+other = "direktori sudah ada: {{.Path}}"
+
+[error.dir.not_found]
+one = "direktori tidak ditemukan: {{.Path}}"
+other = "direktori tidak ditemukan: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "mengharapkan {{.Path}} menjadi file, tapi itu adalah direktori"
+other = "mengharapkan {{.Path}} menjadi file, tapi itu adalah direktori"
+
+[error.file.expect_dir_but_file]
+one = "mengharapkan {{.Path}} menjadi direktori, tapi itu adalah file"
+other = "mengharapkan {{.Path}} menjadi direktori, tapi itu adalah file"
+
+[error.file.cannot_remove_root]
+one = "TIDAK boleh menghapus direktori root"
+other = "TIDAK boleh menghapus direktori root"
+
+# Kesalahan file lingkungan
+[error.env.zero_length_string]
+one = "string panjang nol"
+other = "string panjang nol"
+
+[error.env.cannot_separate_key_value]
+one = "tidak dapat memisahkan kunci dari nilai"
+other = "tidak dapat memisahkan kunci dari nilai"
+
+# Kesalahan jaringan
+[error.net.interface_not_found]
+one = "antarmuka {{.Interface}} tidak ditemukan, mati, atau tidak mendukung broadcast"
+other = "antarmuka {{.Interface}} tidak ditemukan, mati, atau tidak mendukung broadcast"
+
+# Pesan kesalahan operasi file
+[InvalidChmodValue]
+one = "nilai chmod tidak valid: {{.value}}"
+other = "nilai chmod tidak valid: {{.value}}"
+
+[FailedToChmod]
+one = "chmod gagal"
+other = "chmod gagal"
+
+[FailedToChown]
+one = "chown gagal, output: {{.output}}"
+other = "chown gagal, output: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "gagal membuat direktori tujuan"
+other = "gagal membuat direktori tujuan"
+
+[FailedToOpenSource]
+one = "gagal membuka file sumber"
+other = "gagal membuka file sumber"
+
+[FailedToCreateDest]
+one = "gagal membuat file tujuan"
+other = "gagal membuat file tujuan"
+
+[FailedToCopyFile]
+one = "gagal menyalin file"
+other = "gagal menyalin file"
+
+[FailedToRemoveSource]
+one = "gagal menghapus file sumber setelah menyalin"
+other = "gagal menghapus file sumber setelah menyalin"
+
+[FailedToCreateLinkDir]
+one = "gagal membuat direktori tautan"
+other = "gagal membuat direktori tautan"
+
+[FailedToCreateSymlink]
+one = "gagal membuat tautan simbolik, output: {{.output}}"
+other = "gagal membuat tautan simbolik, output: {{.output}}"
+
+[FailedToCreateDir]
+one = "gagal membuat direktori"
+other = "gagal membuat direktori"
+
+[FailedToGetFileSize]
+one = "gagal mendapatkan ukuran file"
+other = "gagal mendapatkan ukuran file"
+
+[FailedToRenameFile]
+one = "gagal mengubah nama file"
+other = "gagal mengubah nama file"
+
+[FailedToCreateDirSudo]
+one = "gagal membuat direktori dengan sudo, output: {{.output}}"
+other = "gagal membuat direktori dengan sudo, output: {{.output}}"

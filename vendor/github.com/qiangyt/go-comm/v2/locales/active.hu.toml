@@ -1,0 +1,208 @@
+# go-comm Magyar üzenetek
+
+# Típuskonverziós hibák
+[error.required]
+one = "{{.Hint}}.{{.Key}} kötelező"
+other = "{{.Hint}}.{{.Key}} kötelező"
+
+[error.type.string]
+one = "{{.Hint}} karakterlánctípus kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} karakterlánctípus kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.string_array]
+one = "{{.Hint}} karakterlánc-tömb kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} karakterlánc-tömb kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.string_map]
+one = "{{.Hint}} karakterlánc-térkép kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} karakterlánc-térkép kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.int]
+one = "{{.Hint}} egésztípus kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} egésztípus kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.int_array]
+one = "{{.Hint}} egésztömb kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} egésztömb kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.int_map]
+one = "{{.Hint}} egésztérkép kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} egésztérkép kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.float]
+one = "{{.Hint}} float64 kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} float64 kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.float_array]
+one = "{{.Hint}} float64 tömb kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} float64 tömb kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.float_map]
+one = "{{.Hint}} float64 térkép kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} float64 térkép kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.bool]
+one = "{{.Hint}} logikai típus kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} logikai típus kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.bool_array]
+one = "{{.Hint}} logikai tömb kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} logikai tömb kell legyen, de ez most {{.Type}}({{.Value}})"
+
+[error.type.bool_map]
+one = "{{.Hint}} logikai térkép kell legyen, de ez most {{.Type}}({{.Value}})"
+other = "{{.Hint}} logikai térkép kell legyen, de ez most {{.Type}}({{.Value}})"
+
+# Plugin hibák
+[error.plugin.version_mismatch]
+one = "a {{.Namespace}}/{{.Name}} plugin főverziójának {{.Expected}} kellene lennie, de {{.Actual}}"
+other = "a {{.Namespace}}/{{.Name}} plugin főverziójának {{.Expected}} kellene lennie, de {{.Actual}}"
+
+[error.plugin.unsupported_kind]
+one = "a {{.Namespace}}/{{.Name}} plugin nem támogatott típust {{.Kind}} követeli"
+other = "a {{.Namespace}}/{{.Name}} plugin nem támogatott típust {{.Kind}} követeli"
+
+[error.plugin.namespace_not_specified]
+one = "névtér nincs megadva: {{.Loader}}"
+other = "névtér nincs megadva: {{.Loader}}"
+
+[error.plugin.namespace_already_registered]
+one = "a plugin névtér {{.Namespace}} már regisztrálva itt: {{.Loader}}"
+other = "a plugin névtér {{.Namespace}} már regisztrálva itt: {{.Loader}}"
+
+[error.plugin.duplicated_kind]
+one = "a {{.Namespace}} plugin duplikált típussal {{.Kind}} rendelkezik: {{.Loader}}"
+other = "a {{.Namespace}} plugin duplikált típussal {{.Kind}} rendelkezik: {{.Loader}}"
+
+[error.plugin.start_failed]
+one = "plugin indítása: {{.PluginId}} (verzió {{.Version}}), ok: {{.Cause}}"
+other = "plugin indítása: {{.PluginId}} (verzió {{.Version}}), ok: {{.Cause}}"
+
+[error.plugin.stop_failed]
+one = "plugin leállítása: {{.PluginId}} (verzió {{.Version}}), ok: {{.Cause}}"
+other = "plugin leállítása: {{.PluginId}} (verzió {{.Version}}), ok: {{.Cause}}"
+
+# Plugin naplóüzenetek
+[log.plugin.loader.starting]
+one = "plugin betöltő indítása"
+other = "plugin betöltő indítása"
+
+[log.plugin.loader.started]
+one = "plugin betöltő elindítva"
+other = "plugin betöltő elindítva"
+
+[log.plugin.loader.start_failed]
+one = "plugin betöltő indítása sikertelen"
+other = "plugin betöltő indítása sikertelen"
+
+[log.plugin.loader.stopping]
+one = "plugin betöltő leállítása"
+other = "plugin betöltő leállítása"
+
+[log.plugin.loader.stopped]
+one = "plugin betöltő leállítva"
+other = "plugin betöltő leállítva"
+
+[log.plugin.loader.stop_failed]
+one = "plugin betöltő leállítása sikertelen"
+other = "plugin betöltő leállítása sikertelen"
+
+# Fájl hibák
+[error.file.already_exists]
+one = "a fájl már létezik: {{.Path}}"
+other = "a fájl már létezik: {{.Path}}"
+
+[error.file.not_found]
+one = "fájl nem található: {{.Path}}"
+other = "fájl nem található: {{.Path}}"
+
+[error.dir.already_exists]
+one = "a könyvtár már létezik: {{.Path}}"
+other = "a könyvtár már létezik: {{.Path}}"
+
+[error.dir.not_found]
+one = "könyvtár nem található: {{.Path}}"
+other = "könyvtár nem található: {{.Path}}"
+
+[error.file.expect_file_but_dir]
+one = "a(z) {{.Path}} fájlnak kellene lennie, de ez egy könyvtár"
+other = "a(z) {{.Path}} fájlnak kellene lennie, de ez egy könyvtár"
+
+[error.file.expect_dir_but_file]
+one = "a(z) {{.Path}} könyvtárnak kellene lennie, de ez egy fájl"
+other = "a(z) {{.Path}} könyvtárnak kellene lennie, de ez egy fájl"
+
+[error.file.cannot_remove_root]
+one = "NEM szabad eltávolítani a gyökérkönyvtárat"
+other = "NEM szabad eltávolítani a gyökérkönyvtárat"
+
+# Környezeti fájl hibák
+[error.env.zero_length_string]
+one = " nulla hosszúságú karakterlánc"
+other = "nulla hosszúságú karakterlánc"
+
+[error.env.cannot_separate_key_value]
+one = "nem lehet elválasztani a kulcsot az értéktől"
+other = "nem lehet elválasztani a kulcsot az értéktől"
+
+# Hálózati hibák
+[error.net.interface_not_found]
+one = "a(z) {{.Interface}} interfész nem található, le van állítva vagy nem támogat az üzenetszórást"
+other = "a(z) {{.Interface}} interfész nem található, le van állítva vagy nem támogat az üzenetszórást"
+
+# Fájlműveleti hibaüzenetek
+[InvalidChmodValue]
+one = "érvénytelen chmod érték: {{.value}}"
+other = "érvénytelen chmod érték: {{.value}}"
+
+[FailedToChmod]
+one = "chmod sikertelen"
+other = "chmod sikertelen"
+
+[FailedToChown]
+one = "chown sikertelen, kimenet: {{.output}}"
+other = "chown sikertelen, kimenet: {{.output}}"
+
+[FailedToCreateDestDir]
+one = "célkönyvtár létrehozása sikertelen"
+other = "célkönyvtár létrehozása sikertelen"
+
+[FailedToOpenSource]
+one = "forrásfájl megnyitása sikertelen"
+other = "forrásfájl megnyitása sikertelen"
+
+[FailedToCreateDest]
+one = "célfájl létrehozása sikertelen"
+other = "célfájl létrehozása sikertelen"
+
+[FailedToCopyFile]
+one = "fájl másolása sikertelen"
+other = "fájl másolása sikertelen"
+
+[FailedToRemoveSource]
+one = "forrásfájl eltávolítása másolás után sikertelen"
+other = "forrásfájl eltávolítása másolás után sikertelen"
+
+[FailedToCreateLinkDir]
+one = "linkkönyvtár létrehozása sikertelen"
+other = "linkkönyvtár létrehozása sikertelen"
+
+[FailedToCreateSymlink]
+one = "szimbolikus link létrehozása sikertelen, kimenet: {{.output}}"
+other = "szimbolikus link létrehozása sikertelen, kimenet: {{.output}}"
+
+[FailedToCreateDir]
+one = "könyvtár létrehozása sikertelen"
+other = "könyvtár létrehozása sikertelen"
+
+[FailedToGetFileSize]
+one = "fájlméret lekérése sikertelen"
+other = "fájlméret lekérése sikertelen"
+
+[FailedToRenameFile]
+one = "fájl átnevezése sikertelen"
+other = "fájl átnevezése sikertelen"
+
+[FailedToCreateDirSudo]
+one = "könyvtár létrehozása sudo-val sikertelen, kimenet: {{.output}}"
+other = "könyvtár létrehozása sudo-val sikertelen, kimenet: {{.output}}"
