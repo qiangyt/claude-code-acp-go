@@ -1,0 +1,7 @@
+{
+  "resource": {
+    "text": "package main\n\nfunc main() {}",
+    "uri": "file:///project/main.go"
+  },
+  "type": "resource"
+}

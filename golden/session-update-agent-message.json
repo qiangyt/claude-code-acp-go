@@ -1,0 +1,7 @@
+{
+  "content": {
+    "text": "Hello, World!",
+    "type": "text"
+  },
+  "sessionUpdate": "agent_message_chunk"
+}

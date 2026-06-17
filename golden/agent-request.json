@@ -1,0 +1,7 @@
+{
+  "id": {},
+  "method": "session/prompt",
+  "params": {
+    "key": "value"
+  }
+}

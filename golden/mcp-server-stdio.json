@@ -1,0 +1,13 @@
+{
+  "args": [
+    "/home/user"
+  ],
+  "command": "mcp-filesystem",
+  "env": [
+    {
+      "name": "DEBUG",
+      "value": "1"
+    }
+  ],
+  "name": ""
+}

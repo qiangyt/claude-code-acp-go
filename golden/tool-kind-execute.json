@@ -1,0 +1,7 @@
+{
+  "kind": "execute",
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Executing command",
+  "toolCallId": "call-execute"
+}

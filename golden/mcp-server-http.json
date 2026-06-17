@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "Bearer token"
+    }
+  ],
+  "name": "",
+  "type": "http",
+  "url": "http://localhost:8080/mcp"
+}

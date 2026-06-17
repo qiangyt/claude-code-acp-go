@@ -1,0 +1,7 @@
+{
+  "content": {
+    "text": "User message",
+    "type": "text"
+  },
+  "sessionUpdate": "user_message_chunk"
+}

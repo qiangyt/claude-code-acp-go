@@ -1,0 +1,7 @@
+{
+  "content": {
+    "text": "Thinking...",
+    "type": "text"
+  },
+  "sessionUpdate": "agent_thought_chunk"
+}

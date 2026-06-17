@@ -1,0 +1,10 @@
+{
+  "availableModes": [
+    {
+      "description": "Coding mode",
+      "id": "code",
+      "name": "Code"
+    }
+  ],
+  "currentModeId": "code"
+}

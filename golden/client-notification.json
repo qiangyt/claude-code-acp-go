@@ -1,0 +1,6 @@
+{
+  "method": "session/cancel",
+  "params": {
+    "sessionId": "session-123"
+  }
+}

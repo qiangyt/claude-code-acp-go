@@ -1,0 +1,7 @@
+{
+  "kind": "fetch",
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Fetching URL",
+  "toolCallId": "call-fetch"
+}

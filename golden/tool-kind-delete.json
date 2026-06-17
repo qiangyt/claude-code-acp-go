@@ -1,0 +1,15 @@
+{
+  "kind": "delete",
+  "locations": [
+    {
+      "path": "/tmp/old.txt"
+    }
+  ],
+  "rawInput": {
+    "path": "/tmp/old.txt"
+  },
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Deleting file",
+  "toolCallId": "call-delete"
+}

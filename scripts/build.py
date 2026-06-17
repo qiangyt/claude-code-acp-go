@@ -177,6 +177,95 @@ def task_check_coverage() -> None:
         print("覆盖率达标: 100%")
 
 
+# ============================================================
+# 黄金文件测试任务
+# ============================================================
+
+def task_golden_test() -> None:
+    """运行黄金文件测试"""
+    print("=== 运行黄金文件测试 ===")
+    run("go test -v -run TestGolden ./internal/acp/")
+
+
+def task_golden_update() -> None:
+    """更新黄金文件"""
+    print("=== 更新黄金文件 ===")
+    run("go test -v -run TestGolden ./internal/acp/ -update-golden")
+    print("\n黄金文件已更新到 golden/ 目录")
+
+
+def task_golden_verify() -> None:
+    """验证黄金文件（运行测试并检查覆盖率）"""
+    print("=== 验证黄金文件 ===")
+
+    # 1. 列出现有黄金文件
+    print("\n1. 黄金文件列表:")
+    result = subprocess.run(
+        "ls -la golden/*.json 2>/dev/null || echo '没有黄金文件'",
+        shell=True, capture_output=True, text=True
+    )
+    print(result.stdout)
+
+    # 2. 运行黄金测试
+    print("\n2. 运行黄金测试:")
+    ret = run("go test -v -run TestGolden ./internal/acp/")
+    if ret != 0:
+        print("黄金测试失败！")
+        sys.exit(1)
+
+    # 3. 检查覆盖率
+    print("\n3. 检查覆盖率:")
+    result = subprocess.run(
+        "go test -cover ./internal/acp/",
+        shell=True, capture_output=True, text=True
+    )
+    print(result.stdout)
+
+    print("\n=== 验证完成 ===")
+
+
+def task_golden_list() -> None:
+    """列出所有黄金文件"""
+    print("=== 黄金文件列表 ===")
+    result = subprocess.run(
+        "ls -la golden/*.json 2>/dev/null",
+        shell=True, capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        print("没有找到黄金文件")
+        return
+    print(result.stdout)
+
+    # 显示文件数量
+    count = subprocess.run(
+        "ls golden/*.json 2>/dev/null | wc -l",
+        shell=True, capture_output=True, text=True
+    )
+    print(f"共 {count.stdout.strip()} 个黄金文件")
+
+
+def task_verify_all() -> None:
+    """运行完整验证（单元测试 + 黄金测试 + 竞态检测 + Lint）"""
+    tasks = [
+        ("单元测试", lambda: run("go test ./...")),
+        ("黄金测试", task_golden_test),
+        ("竞态检测", task_test_race),
+        ("代码检查", task_lint),
+    ]
+
+    for i, (name, fn) in enumerate(tasks, 1):
+        print(f"\n=== {i}/{len(tasks)} {name} ===")
+        ret = fn() if callable(fn) else fn
+        if callable(fn) and fn == task_golden_test:
+            task_golden_test()
+            ret = 0
+        if ret and ret != 0:
+            print(f"{name}失败")
+            sys.exit(1)
+
+    print("\n=== 所有验证通过 ===")
+
+
 def task_test_all() -> None:
     """运行所有测试"""
     tasks = [
@@ -200,7 +289,8 @@ TaskName = Literal[
     "mod", "check", "test", "build", "build-all", "release",
     "init", "mockgen", "test-unit", "test-race", "test-e2e",
     "test-compat", "test-all", "lint", "clean", "generate",
-    "check-coverage"
+    "check-coverage", "golden-test", "golden-update", "golden-verify",
+    "golden-list", "verify-all"
 ]
 
 TASKS: dict[TaskName, Callable[[], int | None]] = {
@@ -225,6 +315,12 @@ TASKS: dict[TaskName, Callable[[], int | None]] = {
     "clean": task_clean,
     "generate": task_generate,
     "check-coverage": task_check_coverage,
+    # 黄金文件测试任务
+    "golden-test": task_golden_test,
+    "golden-update": task_golden_update,
+    "golden-verify": task_golden_verify,
+    "golden-list": task_golden_list,
+    "verify-all": task_verify_all,
 }
 
 

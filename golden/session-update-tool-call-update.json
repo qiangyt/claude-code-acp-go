@@ -1,0 +1,5 @@
+{
+  "sessionUpdate": "tool_call_update",
+  "status": "completed",
+  "toolCallId": "call-1"
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "edit",
+  "locations": [
+    {
+      "path": "/project/config.json"
+    }
+  ],
+  "rawInput": {
+    "content": {
+      "new_value": "updated"
+    },
+    "path": "/project/config.json"
+  },
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Editing configuration file",
+  "toolCallId": "call-edit-1"
+}

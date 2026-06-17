@@ -182,7 +182,7 @@ func TestServer_WithPermissionCheck(t *testing.T) {
 			"arguments": map[string]any{},
 		},
 	}
-	resp, err = server.HandleMessage(msg)
+	_, err = server.HandleMessage(msg)
 	require.NoError(t, err)
 	// 注意：当前实现中权限检查器只是记录，实际拦截需要在 HandleMessage 中实现
 	// 这里测试权限检查器是否被正确调用

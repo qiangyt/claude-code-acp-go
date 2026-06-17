@@ -1,0 +1,7 @@
+{
+  "description": "Create a git commit",
+  "input": {
+    "hint": "Create a commit with the staged changes"
+  },
+  "name": "commit"
+}

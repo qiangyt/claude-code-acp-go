@@ -1,0 +1,13 @@
+{
+  "args": [
+    "-l"
+  ],
+  "command": "/bin/bash",
+  "env": [
+    {
+      "name": "TERM",
+      "value": "xterm-256color"
+    }
+  ],
+  "sessionId": "session-123"
+}

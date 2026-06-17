@@ -1,0 +1,13 @@
+{
+  "loadSession": true,
+  "mcpCapabilities": {
+    "http": true,
+    "sse": true
+  },
+  "promptCapabilities": {
+    "audio": true,
+    "embeddedContext": true,
+    "image": true
+  },
+  "sessionCapabilities": {}
+}

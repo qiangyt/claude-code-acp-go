@@ -1,0 +1,9 @@
+{
+  "availableCommands": [
+    {
+      "description": "Test command",
+      "name": "test"
+    }
+  ],
+  "sessionUpdate": "available_commands_update"
+}

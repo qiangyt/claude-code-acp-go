@@ -1,0 +1,18 @@
+{
+  "options": [
+    {
+      "kind": "allow_once",
+      "name": "Allow Once",
+      "optionId": "allow-once"
+    },
+    {
+      "kind": "reject_once",
+      "name": "Reject Once",
+      "optionId": "reject-once"
+    }
+  ],
+  "sessionId": "session-123",
+  "toolCall": {
+    "toolCallId": "call-1"
+  }
+}

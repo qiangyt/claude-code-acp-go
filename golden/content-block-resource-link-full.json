@@ -1,0 +1,5 @@
+{
+  "name": "config.json",
+  "type": "resource_link",
+  "uri": "file:///project/config.json"
+}

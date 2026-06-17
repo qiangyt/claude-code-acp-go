@@ -367,17 +367,37 @@ func handleBashTool(ctx context.Context, args map[string]any, sessionCtx Session
 	return runBashForeground(command, workingDir, timeout)
 }
 
+// getBlacklistRules 获取黑名单规则（前台和后台命令共用）
+func getBlacklistRules() []comm.CommandRule {
+	return []comm.CommandRule{
+		// 阻止危险的 rm -rf 操作
+		comm.NewCommandRule("rm", comm.MatchExact).
+			WithArgsFilter(comm.ArgMatcher{Position: -1, Pattern: "-r*", Mode: comm.MatchGlob}),
+		// 阻止格式化命令
+		comm.NewCommandRule("mkfs*", comm.MatchGlob),
+		// 阻止 dd 命令（可能覆盖磁盘）
+		comm.NewCommandRule("dd", comm.MatchExact),
+	}
+}
+
+// createSecurityChecker 创建安全检查器（用于后台命令预检查）
+func createSecurityChecker() comm.SecurityChecker {
+	checker := comm.NewSecurityChecker()
+	for _, rule := range getBlacklistRules() {
+		checker.WithBlacklist(rule)
+	}
+	return checker
+}
+
 func runBashForeground(command, workingDir string, timeout int) (any, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(timeout)*time.Second)
 	defer cancel()
 
 	// 使用 GoshExecutor 执行命令
-	// 配置：设置超时时间，可在此添加黑名单规则
+	// 配置：设置超时时间和安全规则（与 runBashBackground 保持一致）
 	config := comm.DefaultGoshConfig().
-		WithKillTimeout(time.Duration(timeout) * time.Second)
-	// 可选：添加黑名单规则
-	// .WithBlacklist(comm.NewCommandRule("rm", "-rf"))
-	// .WithBlacklist(comm.NewCommandRule("mkfs*"))
+		WithKillTimeout(time.Duration(timeout) * time.Second).
+		WithBlacklist(getBlacklistRules()...)
 
 	executor := comm.NewGoshExecutor(config)
 
@@ -418,12 +438,24 @@ func runBashBackground(command, workingDir, terminalID string, sessionCtx Sessio
 		terminalID = fmt.Sprintf("terminal-%d", time.Now().UnixNano())
 	}
 
+	// 安全预检查：解析命令并检查是否允许执行
+	extractor := comm.NewCommandExtractor()
+	cmds, err := extractor.Extract(command)
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse command: %w", err)
+	}
+
+	checker := createSecurityChecker()
+	if err := checker.Check(cmds); err != nil {
+		return nil, fmt.Errorf("command blocked: %w", err)
+	}
+
 	// 记录终端
 	if sessionCtx != nil {
 		sessionCtx.AddTerminal(terminalID, command)
 	}
 
-	// 启动后台命令
+	// 检查通过，启动后台命令
 	cmd := exec.Command("bash", "-c", command)
 	if workingDir != "" {
 		cmd.Dir = workingDir

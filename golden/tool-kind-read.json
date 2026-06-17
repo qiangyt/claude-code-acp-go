@@ -1,0 +1,15 @@
+{
+  "kind": "read",
+  "locations": [
+    {
+      "path": "/tmp/test.txt"
+    }
+  ],
+  "rawInput": {
+    "path": "/tmp/test.txt"
+  },
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Reading file",
+  "toolCallId": "call-read"
+}

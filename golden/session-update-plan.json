@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "content": "Read configuration file",
+      "priority": "",
+      "status": "completed"
+    },
+    {
+      "content": "Analyze code structure",
+      "priority": "",
+      "status": "in_progress"
+    },
+    {
+      "content": "Implement changes",
+      "priority": "",
+      "status": "pending"
+    }
+  ],
+  "sessionUpdate": "plan"
+}

@@ -1,0 +1,14 @@
+{
+  "prompt": [
+    {
+      "text": "Please analyze this code",
+      "type": "text"
+    },
+    {
+      "name": "main.go",
+      "type": "resource_link",
+      "uri": "file:///project/main.go"
+    }
+  ],
+  "sessionId": "session-test-123"
+}

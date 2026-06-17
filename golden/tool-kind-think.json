@@ -1,0 +1,7 @@
+{
+  "kind": "think",
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Thinking",
+  "toolCallId": "call-think"
+}

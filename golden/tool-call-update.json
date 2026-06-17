@@ -1,0 +1,14 @@
+{
+  "content": [
+    {
+      "content": {
+        "text": "file content here",
+        "type": "text"
+      },
+      "type": "content"
+    }
+  ],
+  "sessionUpdate": "tool_call_update",
+  "status": "completed",
+  "toolCallId": "call-1"
+}

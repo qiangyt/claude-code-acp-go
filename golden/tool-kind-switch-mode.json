@@ -1,0 +1,7 @@
+{
+  "kind": "switch_mode",
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Switching mode",
+  "toolCallId": "call-switch-mode"
+}

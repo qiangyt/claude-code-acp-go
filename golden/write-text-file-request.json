@@ -1,0 +1,5 @@
+{
+  "content": "package main\n\nfunc main() {}\n",
+  "path": "/project/main.go",
+  "sessionId": "session-123"
+}

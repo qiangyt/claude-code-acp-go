@@ -1,0 +1,7 @@
+{
+  "content": {
+    "text": "Agent response",
+    "type": "text"
+  },
+  "sessionUpdate": "agent_message_chunk"
+}

@@ -1,0 +1,5 @@
+{
+  "kind": "reject_always",
+  "name": "Reject Always",
+  "optionId": "reject-always"
+}

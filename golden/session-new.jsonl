@@ -1,0 +1,2 @@
+{"jsonrpc":"2.0","id":1,"method":"session/new","params":{"cwd":"/tmp/test-project","mcpServers":[]}}
+{"jsonrpc":"2.0","id":1,"result":{"sessionId":"session-1"}}

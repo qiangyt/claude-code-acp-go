@@ -1,0 +1,15 @@
+{
+  "kind": "move",
+  "locations": [
+    {
+      "path": "/tmp/old.txt"
+    },
+    {
+      "path": "/tmp/new.txt"
+    }
+  ],
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Moving file",
+  "toolCallId": "call-move"
+}

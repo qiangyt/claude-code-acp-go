@@ -1,0 +1,5 @@
+{
+  "kind": "reject_once",
+  "name": "Reject Once",
+  "optionId": "reject-once"
+}

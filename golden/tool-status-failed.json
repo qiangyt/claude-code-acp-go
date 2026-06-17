@@ -1,0 +1,6 @@
+{
+  "sessionUpdate": "tool_call_update",
+  "status": "failed",
+  "title": "Failed operation",
+  "toolCallId": "call-failed"
+}

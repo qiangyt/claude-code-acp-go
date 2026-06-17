@@ -1,0 +1,10 @@
+{
+  "sessionId": "session-123",
+  "update": {
+    "content": {
+      "text": "Notification message",
+      "type": "text"
+    },
+    "sessionUpdate": "agent_message_chunk"
+  }
+}

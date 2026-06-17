@@ -1,0 +1,11 @@
+{
+  "kind": "read",
+  "locations": [
+    {
+      "path": "/tmp/test.txt"
+    }
+  ],
+  "status": "pending",
+  "title": "Reading file",
+  "toolCallId": "call-123"
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "other",
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Other operation",
+  "toolCallId": "call-other"
+}

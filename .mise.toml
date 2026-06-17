@@ -74,6 +74,27 @@ run = "python3 scripts/build.py generate"
 description = "生成 mock 文件"
 run = "python3 scripts/build.py mockgen"
 
+# 黄金文件测试任务
+[tasks.golden-test]
+description = "运行黄金文件测试"
+run = "python3 scripts/build.py golden-test"
+
+[tasks.golden-update]
+description = "更新黄金文件"
+run = "python3 scripts/build.py golden-update"
+
+[tasks.golden-verify]
+description = "验证黄金文件（运行测试并检查覆盖率）"
+run = "python3 scripts/build.py golden-verify"
+
+[tasks.golden-list]
+description = "列出所有黄金文件"
+run = "python3 scripts/build.py golden-list"
+
+[tasks.verify-all]
+description = "运行完整验证（单元测试 + 黄金测试 + 竞态检测 + Lint）"
+run = "python3 scripts/build.py verify-all"
+
 # [tasks.env-up]
 # description = "启动测试环境（MQTT Broker）"
 # run = "python3 scripts/build.py env-up"

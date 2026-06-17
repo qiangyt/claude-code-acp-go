@@ -1,0 +1,7 @@
+{
+  "kind": "search",
+  "sessionUpdate": "tool_call",
+  "status": "pending",
+  "title": "Searching in files",
+  "toolCallId": "call-search"
+}

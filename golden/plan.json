@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "content": "Step 1",
+      "priority": "",
+      "status": "completed"
+    },
+    {
+      "content": "Step 2",
+      "priority": "",
+      "status": "in_progress"
+    }
+  ]
+}
